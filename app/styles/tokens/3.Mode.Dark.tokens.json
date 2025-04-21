@@ -1,0 +1,178 @@
+{
+  "base": {
+    "accent": {
+      "type": "color",
+      "value": "{colors.accent-dark}"
+    },
+    "accent-foreground": {
+      "type": "color",
+      "value": "{colors.accent-foreground-dark}"
+    },
+    "background": {
+      "type": "color",
+      "value": "{colors.background-dark}"
+    },
+    "border": {
+      "type": "color",
+      "value": "{colors.border-dark}"
+    },
+    "button-accent-dark": {
+      "type": "color",
+      "value": "{colors.button-accent-dark}"
+    },
+    "card": {
+      "type": "color",
+      "value": "{colors.card-dark}"
+    },
+    "card-foreground": {
+      "type": "color",
+      "value": "{colors.card-foreground-dark}"
+    },
+    "destructive": {
+      "type": "color",
+      "value": "{colors.destructive-dark}"
+    },
+    "destructive-foreground": {
+      "type": "color",
+      "value": "{colors.destructive-foreground-dark}"
+    },
+    "foreground": {
+      "type": "color",
+      "value": "{colors.foreground-dark}"
+    },
+    "input": {
+      "type": "color",
+      "value": "{colors.input-dark}"
+    },
+    "muted": {
+      "type": "color",
+      "value": "{colors.muted-dark}"
+    },
+    "muted-foreground": {
+      "type": "color",
+      "value": "{colors.muted-foreground-dark}"
+    },
+    "popover": {
+      "type": "color",
+      "value": "{colors.popover-dark}"
+    },
+    "popover-foreground": {
+      "type": "color",
+      "value": "{colors.popover-foreground-dark}"
+    },
+    "primary": {
+      "type": "color",
+      "value": "{colors.primary-dark}"
+    },
+    "primary-foreground": {
+      "type": "color",
+      "value": "{colors.primary-foreground-dark}"
+    },
+    "ring": {
+      "type": "color",
+      "value": "{colors.ring-dark}"
+    },
+    "ring-offset": {
+      "type": "color",
+      "value": "{tailwind colors.base.white}"
+    },
+    "secondary": {
+      "type": "color",
+      "value": "{colors.secondary-dark}"
+    },
+    "secondary-foreground": {
+      "type": "color",
+      "value": "{colors.secondary-foreground-dark}"
+    },
+    "chart-1": {
+      "type": "color",
+      "value": "{colors.chart-1-dark}"
+    },
+    "chart-2": {
+      "type": "color",
+      "value": "{colors.chart-2-dark}"
+    },
+    "chart-3": {
+      "type": "color",
+      "value": "{colors.chart-3-dark}"
+    },
+    "chart-4": {
+      "type": "color",
+      "value": "{colors.chart-4-dark}"
+    },
+    "chart-5": {
+      "type": "color",
+      "value": "{colors.chart-5-dark}"
+    },
+    "sidebar-background": {
+      "type": "color",
+      "value": "{colors.sidebar-background-dark}"
+    },
+    "sidebar-foreground": {
+      "type": "color",
+      "value": "{colors.sidebar-foreground-dark}"
+    },
+    "sidebar-primary": {
+      "type": "color",
+      "value": "{colors.sidebar-primary-dark}"
+    },
+    "sidebar-primary-foreground": {
+      "type": "color",
+      "value": "{colors.sidebar-primary-foreground-dark}"
+    },
+    "sidebar-accent": {
+      "type": "color",
+      "value": "{colors.sidebar-accent-dark}"
+    },
+    "sidebar-accent-foreground": {
+      "type": "color",
+      "value": "{colors.sidebar-accent-foreground-dark}"
+    },
+    "sidebar-border": {
+      "type": "color",
+      "value": "{colors.sidebar-border-dark}"
+    },
+    "sidebar-ring": {
+      "type": "color",
+      "value": "{colors.sidebar-ring-dark}"
+    }
+  },
+  "alpha": {
+    "10": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.9000)"
+    },
+    "20": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.8000)"
+    },
+    "30": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.7000)"
+    },
+    "40": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.6000)"
+    },
+    "50": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.5000)"
+    },
+    "60": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.4000)"
+    },
+    "70": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.3000)"
+    },
+    "80": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.2000)"
+    },
+    "90": {
+      "type": "color",
+      "value": "rgba(9, 9, 11, 0.1000)"
+    }
+  }
+}

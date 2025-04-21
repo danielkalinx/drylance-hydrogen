@@ -3,118 +3,13 @@
  * https://tailwindcss.com/docs/v4-beta#css-first-configuration
  */
 
-@font-face {
-  font-family: 'Satoshi-Variable';
-  src:
-    url('../assets/fonts/fonthere/Satoshi-Variable.woff2') format('woff2'),
-    url('../assets/fonts/fonthere/Satoshi-Variable.woff') format('woff'),
-    url('../assets/fonts/fonthere/Satoshi-Variable.ttf') format('truetype');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: normal;
-}
 /**
-* This is a variable font
+* This is a variable fo
 * You can control variable axes as shown below:
 * font-variation-settings: wght 900.0;
 *
 * available axes:
 'wght' (range from 300.0 to 900.0
 */
-@font-face {
-  font-family: 'Satoshi-VariableItalic';
-  src:
-    url('../assets/fonts/fonthere/Satoshi-VariableItalic.woff2') format('woff2'),
-    url('../assets/fonts/fonthere/Satoshi-VariableItalic.woff') format('woff'),
-    url('../assets/fonts/fonthere/Satoshi-VariableItalic.ttf')
-      format('truetype');
-  font-weight: 300 900;
-  font-display: swap;
-  font-style: italic;
-}
 
 @import 'tailwindcss';
-
-:root {
-  --background: oklch(100% 0 89.9);
-  --foreground: oklch(21.02% 0.006 285.9);
-  --card: oklch(100% 0 89.9);
-  --card-foreground: oklch(14.17% 0.004 285.8);
-  --popover: oklch(100% 0 89.9);
-  --popover-foreground: oklch(14.17% 0.004 285.8);
-  --primary: oklch(58.97% 0.186 312.9);
-  --primary-foreground: oklch(98.48% 0 89.9);
-  --secondary: oklch(98.48% 0 89.9);
-  --secondary-foreground: oklch(21.02% 0.006 285.9);
-  --muted: oklch(96.83% 0.001 286.4);
-  --muted-foreground: oklch(71.27% 0.013 286.1);
-  --accent: oklch(98.05% 0.009 314.8);
-  --accent-foreground: oklch(58.97% 0.186 312.9);
-  --destructive: oklch(57.86% 0.214 27.2);
-  --destructive-foreground: oklch(96.78% 0.014 17.4);
-  --border: oklch(91.97% 0.004 286.3);
-  --input: oklch(91.97% 0.004 286.3);
-  --ring: oklch(21.02% 0.006 285.9);
-  --radius: 1.5rem;
-  --chart-1: oklch(63.09% 0.101 183.5);
-  --chart-2: oklch(67.72% 0.157 35.2);
-  --chart-3: oklch(37.87% 0.044 225.5);
-  --chart-4: oklch(83.36% 0.119 88.1);
-  --chart-5: oklch(78.34% 0.126 58.7);
-  --sidebar-background: oklch(98.48% 0 89.9);
-  --sidebar-foreground: oklch(37.01% 0.011 285.8);
-  --sidebar-primary: oklch(21.02% 0.006 285.9);
-  --sidebar-primary-foreground: oklch(98.48% 0 89.9);
-  --sidebar-accent: oklch(96.83% 0.001 286.4);
-  --sidebar-accent-foreground: oklch(21.02% 0.006 285.9);
-  --sidebar-border: oklch(92.78% 0.006 264.5);
-  --sidebar-ring: oklch(71.27% 0.013 286.1);
-  --radiocard-secondaryunchecked: oklch(50.79% 0.192 27.6);
-  --radiocard-secondarychecked: oklch(50.79% 0.192 27.6);
-  --button-accent: oklch(21.02% 0.006 285.9);
-
-  --background: oklch(14.17% 0.004 285.8);
-  --foreground: oklch(98.48% 0 89.9);
-  --card: oklch(14.17% 0.004 285.8);
-  --card-foreground: oklch(98.48% 0 89.9);
-  --popover: oklch(14.17% 0.004 285.8);
-  --popover-foreground: oklch(98.48% 0 89.9);
-  --primary: oklch(98.48% 0 89.9);
-  --primary-foreground: oklch(21.02% 0.006 285.9);
-  --secondary: oklch(27.47% 0.006 286);
-  --secondary-foreground: oklch(98.48% 0 89.9);
-  --muted: oklch(27.47% 0.006 286);
-  --muted-foreground: oklch(55.04% 0.014 285.9);
-  --accent: oklch(27.47% 0.006 286);
-  --accent-foreground: oklch(98.48% 0 89.9);
-  --destructive: oklch(39.96% 0.135 25.8);
-  --destructive-foreground: oklch(96.78% 0.014 17.4);
-  --border: oklch(44.31% 0.014 285.8);
-  --input: oklch(27.47% 0.006 286);
-  --ring: oklch(87.16% 0.006 286.3);
-  --radius: 1.5rem;
-  --chart-1: oklch(52.92% 0.193 262.1);
-  --chart-2: oklch(61.23% 0.209 6.4);
-  --chart-3: oklch(72.32% 0.15 60.6);
-  --chart-4: oklch(61.92% 0.204 312.7);
-  --chart-5: oklch(69.83% 0.134 165.5);
-  --sidebar-background: oklch(21.02% 0.006 285.9);
-  --sidebar-foreground: oklch(96.83% 0.001 286.4);
-  --sidebar-primary: oklch(48.96% 0.215 264.3);
-  --sidebar-primary-foreground: oklch(100% 0 89.9);
-  --sidebar-accent: oklch(27.47% 0.006 286);
-  --sidebar-accent-foreground: oklch(96.83% 0.001 286.4);
-  --sidebar-border: oklch(27.47% 0.006 286);
-  --sidebar-ring: oklch(87.16% 0.006 286.3);
-  --radiocard-secondaryunchecked: oklch(50.79% 0.192 27.6);
-  --radiocard-secondarychecked: oklch(50.79% 0.192 27.6);
-  --button-accent: oklch(96.83% 0.001 286.4);
-}
-
-@theme {
-  --font-sans: 'Satoshi-Variable', sans-serif;
-}
-
-body {
-  @apply font-sans;
-}
