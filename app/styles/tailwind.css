@@ -11,6 +11,31 @@
 @theme {
   --font-sans: 'poppins', sans-serif;
   --font-display: 'area-variable', sans-serif;
+
+  /* Custom Colors */
+  --color-lavender-oklch-50: oklch(98.09% 0.009 314.8);
+  --color-lavender-oklch-100: oklch(95.45% 0.022 312.2);
+  --color-lavender-oklch-200: oklch(91.65% 0.042 312.3);
+  --color-lavender-oklch-300: oklch(84.03% 0.079 313.1);
+  --color-lavender-oklch-400: oklch(75.83% 0.121 313.5);
+  --color-lavender-oklch-500: oklch(66.53% 0.166 313.1);
+  --color-lavender-oklch-600: oklch(58.95% 0.187 313.1);
+  --color-lavender-oklch-700: oklch(52.15% 0.179 313.6);
+  --color-lavender-oklch-800: oklch(46.24% 0.146 314.5);
+  --color-lavender-oklch-900: oklch(40.13% 0.122 315.1);
+  --color-lavender-oklch-950: oklch(30.27% 0.111 314.3);
+
+  --color-biloba-oklch-50: oklch(97.4% 0.011 297.6);
+  --color-biloba-oklch-100: oklch(95.22% 0.018 296.6);
+  --color-biloba-oklch-200: oklch(91.1% 0.033 293.4);
+  --color-biloba-oklch-300: oklch(83.88% 0.062 294.4);
+  --color-biloba-oklch-400: oklch(79.13% 0.08 296);
+  --color-biloba-oklch-500: oklch(64.64% 0.139 296.5);
+  --color-biloba-oklch-600: oklch(57.14% 0.164 298);
+  --color-biloba-oklch-700: oklch(51.23% 0.166 298.6);
+  --color-biloba-oklch-800: oklch(45.11% 0.143 298.2);
+  --color-biloba-oklch-900: oklch(39.78% 0.121 298.9);
+  --color-biloba-oklch-950: oklch(29.88% 0.089 296.9);
 }
 
 @layer base {

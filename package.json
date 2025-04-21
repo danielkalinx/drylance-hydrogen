@@ -10,7 +10,8 @@
     "preview": "shopify hydrogen preview --build",
     "lint": "eslint --no-error-on-unmatched-pattern .",
     "typecheck": "tsc --noEmit",
-    "codegen": "shopify hydrogen codegen"
+    "codegen": "shopify hydrogen codegen",
+    "convert-colors": "tsx scripts/convertHexToOklch.ts"
   },
   "prettier": "@shopify/prettier-config",
   "dependencies": {
@@ -62,6 +63,7 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
     "prettier": "^3.4.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.2.2",
     "vite": "^6.2.1",
     "vite-tsconfig-paths": "^4.3.1"
