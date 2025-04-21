@@ -116,5 +116,5 @@
 }
 
 body {
-  @apply bg-amber-400 font-sans;
+  @apply font-sans;
 }
