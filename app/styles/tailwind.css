@@ -4,3 +4,26 @@
  */
 
 @import 'tailwindcss';
+
+/* Adobe Fonts */
+/* @import url('https://use.typekit.net/tyt0tdt.css'); */
+
+@theme {
+  --font-sans: 'poppins', sans-serif;
+  --font-display: 'area-variable', sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+}
