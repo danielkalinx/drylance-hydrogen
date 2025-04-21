@@ -13,3 +13,328 @@
 */
 
 @import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Hydorgen Styles */
+
+  --aside-width: 400px;
+  --cart-aside-summary-height-with-discount: 300px;
+  --cart-aside-summary-height: 250px;
+  --grid-item-width: 355px;
+  --header-height: 64px;
+
+  /* 1. TailwindCSS.Default.tokens.json */
+  --color-lavender-50: oklch(98.09% 0.009 314.8);
+  --color-lavender-100: oklch(95.45% 0.022 312.2);
+  --color-lavender-200: oklch(91.65% 0.042 312.3);
+  --color-lavender-300: oklch(84.03% 0.079 313.1);
+  --color-lavender-400: oklch(75.83% 0.121 313.5);
+  --color-lavender-500: oklch(66.53% 0.166 313.1);
+  --color-lavender-600: oklch(58.95% 0.187 313.1);
+  --color-lavender-700: oklch(52.15% 0.179 313.6);
+  --color-lavender-800: oklch(46.24% 0.146 314.5);
+  --color-lavender-900: oklch(40.13% 0.122 315.1);
+  --color-lavender-950: oklch(30.27% 0.111 314.3);
+
+  --color-biloba-50: oklch(97.4% 0.011 297.6);
+  --color-biloba-100: oklch(95.22% 0.018 296.6);
+  --color-biloba-200: oklch(91.1% 0.033 293.4);
+  --color-biloba-300: oklch(83.88% 0.062 294.4);
+  --color-biloba-400: oklch(79.13% 0.08 296);
+  --color-biloba-500: oklch(64.64% 0.139 296.5);
+  --color-biloba-600: oklch(57.14% 0.164 298);
+  --color-biloba-700: oklch(51.23% 0.166 298.6);
+  --color-biloba-800: oklch(45.11% 0.143 298.2);
+  --color-biloba-900: oklch(39.78% 0.121 298.9);
+  --color-biloba-950: oklch(29.88% 0.089 296.9);
+
+  /* 2. Colors */
+  --color-accent-light: var(--color-lavender-50);
+  --color-accent-dark: var(--color-zinc-800);
+  --color-accent-foreground-light: var(--color-primary-light);
+  --color-accent-foreground-dark: var(--color-zinc-50);
+  --color-background-light: #ffffff;
+  --color-background-dark: var(--color-zinc-950);
+  --color-border-light: var(--color-zinc-200);
+  --color-border-dark: var(--color-zinc-600);
+  --color-button-accent-light: var(--color-zinc-900);
+  --color-button-accent-dark: var(--color-zinc-100);
+  --color-card-light: #ffffff;
+  --color-card-dark: var(--color-zinc-950);
+  --color-card-foreground-light: var(--color-zinc-950);
+  --color-card-foreground-dark: var(--color-zinc-50);
+  --color-destructive-light: var(--color-red-600);
+  --color-destructive-dark: var(--color-red-900);
+  --color-destructive-foreground-light: var(--color-red-50);
+  --color-destructive-foreground-dark: var(--color-red-50);
+  --color-foreground-light: var(--color-zinc-900);
+  --color-foreground-dark: var(--color-zinc-50);
+  --color-input-light: var(--color-zinc-200);
+  --color-input-dark: var(--color-zinc-800);
+  --color-muted-light: var(--color-zinc-100);
+  --color-muted-dark: var(--color-zinc-800);
+  --color-muted-foreground-light: var(--color-zinc-400);
+  --color-muted-foreground-dark: var(--color-zinc-500);
+  --color-popover-light: #ffffff;
+  --color-popover-dark: var(--color-zinc-950);
+  --color-popover-foreground-light: var(--color-zinc-950);
+  --color-popover-foreground-dark: var(--color-zinc-50);
+  --color-primary-light: var(--color-lavender-600);
+  --color-primary-dark: var(--color-zinc-50);
+  --color-radiocard-secondarychecked-light: var(--color-red-700);
+  --color-radiocard-secondarychecked-dark: var(--color-red-700);
+  --color-radiocard-secondaryunchecked-light: var(--color-red-700);
+  --color-radiocard-secondaryunchecked-dark: var(--color-red-700);
+  --color-primary-foreground-light: var(--color-zinc-50);
+  --color-primary-foreground-dark: var(--color-zinc-900);
+  --color-ring-light: var(--color-zinc-900);
+  --color-ring-dark: var(--color-zinc-300);
+  --color-secondary-light: var(--color-zinc-50);
+  --color-secondary-dark: var(--color-zinc-800);
+  --color-secondary-foreground-light: var(--color-zinc-900);
+  --color-secondary-foreground-dark: var(--color-zinc-50);
+  --color-chart-1-light: #2a9d90;
+  --color-chart-1-dark: #2662d9;
+  --color-chart-2-light: #e76e50;
+  --color-chart-2-dark: #e23670;
+  --color-chart-3-light: #274754;
+  --color-chart-3-dark: #e88c30;
+  --color-chart-4-light: #e8c468;
+  --color-chart-4-dark: #af57db;
+  --color-chart-5-light: #f4a462;
+  --color-chart-5-dark: #2eb88a;
+  --color-sidebar-background-light: var(--color-zinc-50);
+  --color-sidebar-background-dark: var(--color-zinc-900);
+  --color-sidebar-foreground-light: var(--color-zinc-700);
+  --color-sidebar-foreground-dark: var(--color-zinc-100);
+  --color-sidebar-primary-light: var(--color-zinc-900);
+  --color-sidebar-primary-dark: var(--color-blue-700);
+  --color-sidebar-primary-foreground-light: var(--color-zinc-50);
+  --color-sidebar-primary-foreground-dark: #ffffff;
+  --color-sidebar-accent-light: var(--color-zinc-100);
+  --color-sidebar-accent-dark: var(--color-zinc-800);
+  --color-sidebar-accent-foreground-light: var(--color-zinc-900);
+  --color-sidebar-accent-foreground-dark: var(--color-zinc-100);
+  --color-sidebar-border-light: var(--color-gray-200);
+  --color-sidebar-border-dark: var(--color-zinc-800);
+  --color-sidebar-ring-light: var(--color-zinc-400);
+  --color-sidebar-ring-dark: var(--color-zinc-300);
+}
+
+@theme inline {
+  /*
+  3. light mode Colors
+  */
+
+  --color-accent: var(--color-accent-light);
+  --color-accent-foreground: var(--color-accent-foreground-light);
+  --color-background: var(--color-background-light);
+  --color-border: var(--color-border-light);
+  --color-button-accent: var(--color-button-accent-light);
+  --color-card: var(--color-card-light);
+  --color-card-foreground: var(--color-card-foreground-light);
+  --color-destructive: var(--color-destructive-light);
+  --color-destructive-foreground: var(--color-destructive-foreground-light);
+  --color-foreground: var(--color-foreground-light);
+  --color-input: var(--color-input-light);
+  --color-muted: var(--color-muted-light);
+  --color-muted-foreground: var(--color-muted-foreground-light);
+  --color-popover: var(--color-popover-light);
+  --color-popover-foreground: var(--color-popover-foreground-light);
+  --color-primary: var(--color-primary-light);
+  --color-primary-foreground: var(--color-primary-foreground-light);
+  --color-ring: var(--color-ring-light);
+  --color-ring-offset: #ffffff;
+  --color-secondary: var(--color-secondary-light);
+  --color-secondary-foreground: var(--color-secondary-foreground-light);
+  --color-chart-1: var(--color-chart-1-light);
+  --color-chart-2: var(--color-chart-2-light);
+  --color-chart-3: var(--color-chart-3-light);
+  --color-chart-4: var(--color-chart-4-light);
+  --color-chart-5: var(--color-chart-5-light);
+  --color-sidebar-background: var(--color-sidebar-background-light);
+  --color-sidebar-foreground: var(--color-sidebar-foreground-light);
+  --color-sidebar-primary: var(--color-sidebar-primary-light);
+  --color-sidebar-primary-foreground: var(
+    --color-sidebar-primary-foreground-light
+  );
+  --color-sidebar-accent: var(--color-sidebar-accent-light);
+  --color-sidebar-accent-foreground: var(
+    --color-sidebar-accent-foreground-light
+  );
+  --color-sidebar-border: var(--color-sidebar-border-light);
+  --color-sidebar-ring: var(--color-sidebar-ring-light);
+
+  /* Alpha values for light mode */
+  --color-alpha-10: rgba(255, 255, 255, 0.9);
+  --color-alpha-20: rgba(255, 255, 255, 0.8);
+  --color-alpha-30: rgba(255, 255, 255, 0.7);
+  --color-alpha-40: rgba(255, 255, 255, 0.6);
+  --color-alpha-50: rgba(255, 255, 255, 0.5);
+  --color-alpha-60: rgba(255, 255, 255, 0.4);
+  --color-alpha-70: rgba(255, 255, 255, 0.3);
+  --color-alpha-80: rgba(255, 255, 255, 0.2);
+  --color-alpha-90: rgba(255, 255, 255, 0.1);
+  /*
+---break---
+*/
+}
+
+.dark {
+  /* 3. dark mode Colors */
+  --color-accent: var(--color-accent-dark);
+  --color-accent-foreground: var(--color-accent-foreground-dark);
+  --color-background: var(--color-background-dark);
+  --color-border: var(--color-border-dark);
+  --color-button-accent: var(--color-button-accent-dark);
+  --color-card: var(--color-card-dark);
+  --color-card-foreground: var(--color-card-foreground-dark);
+  --color-destructive: var(--color-destructive-dark);
+  --color-destructive-foreground: var(--color-destructive-foreground-dark);
+  --color-foreground: var(--color-foreground-dark);
+  --color-input: var(--color-input-dark);
+  --color-muted: var(--color-muted-dark);
+  --color-muted-foreground: var(--color-muted-foreground-dark);
+  --color-popover: var(--color-popover-dark);
+  --color-popover-foreground: var(--color-popover-foreground-dark);
+  --color-primary: var(--color-primary-dark);
+  --color-primary-foreground: var(--color-primary-foreground-dark);
+  --color-ring: var(--color-ring-dark);
+  --color-ring-offset: #ffffff;
+  --color-secondary: var(--color-secondary-dark);
+  --color-secondary-foreground: var(--color-secondary-foreground-dark);
+  --color-chart-1: var(--color-chart-1-dark);
+  --color-chart-2: var(--color-chart-2-dark);
+  --color-chart-3: var(--color-chart-3-dark);
+  --color-chart-4: var(--color-chart-4-dark);
+  --color-chart-5: var(--color-chart-5-dark);
+  --color-sidebar-background: var(--color-sidebar-background-dark);
+  --color-sidebar-foreground: var(--color-sidebar-foreground-dark);
+  --color-sidebar-primary: var(--color-sidebar-primary-dark);
+  --color-sidebar-primary-foreground: var(
+    --color-sidebar-primary-foreground-dark
+  );
+  --color-sidebar-accent: var(--color-sidebar-accent-dark);
+  --color-sidebar-accent-foreground: var(
+    --color-sidebar-accent-foreground-dark
+  );
+  --color-sidebar-border: var(--color-sidebar-border-dark);
+  --color-sidebar-ring: var(--color-sidebar-ring-dark);
+
+  /* Alpha values for dark mode */
+  --color-alpha-10: rgba(9, 9, 11, 0.9);
+  --color-alpha-20: rgba(9, 9, 11, 0.8);
+  --color-alpha-30: rgba(9, 9, 11, 0.7);
+  --color-alpha-40: rgba(9, 9, 11, 0.6);
+  --color-alpha-50: rgba(9, 9, 11, 0.5);
+  --color-alpha-60: rgba(9, 9, 11, 0.4);
+  --color-alpha-70: rgba(9, 9, 11, 0.3);
+  --color-alpha-80: rgba(9, 9, 11, 0.2);
+  --color-alpha-90: rgba(9, 9, 11, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    font-size: var(--font-size-text-4xl);
+    line-height: var(--font-line-height-leading-10);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-tighter);
+    @media (min-width: 45em) {
+      font-size: var(--font-size-text-5xl);
+    }
+  }
+
+  h2 {
+    font-size: var(--font-size-text-3xl);
+    line-height: var(--font-line-height-leading-9);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-tight);
+  }
+
+  h3 {
+    font-size: var(--font-size-text-2xl);
+    line-height: var(--font-line-height-leading-8);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  h4 {
+    font-size: var(--font-size-text-xl);
+    line-height: var(--font-line-height-leading-7);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  p {
+    font-size: var(--font-size-text-base);
+    line-height: var(--font-line-height-leading-7);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  blockquote {
+    font-size: var(--font-size-text-base);
+    line-height: var(--font-line-height-leading-6);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  ul,
+  ol {
+    font-size: var(--font-size-text-base);
+    line-height: var(--font-line-height-leading-7);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  code:not(pre code) {
+    font-size: var(--font-size-text-sm);
+    line-height: var(--font-line-height-leading-5);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  table {
+    font-size: var(--font-size-text-base);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  th {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+@layer components {
+  /* Utility classes that aren't base HTML elements */
+  .lead {
+    font-size: var(--font-size-text-xl);
+    line-height: var(--font-line-height-leading-7);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  .large {
+    font-size: var(--font-size-text-lg);
+    line-height: var(--font-line-height-leading-7);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: var(--font-letter-spacing-normal);
+  }
+
+  .small {
+    font-size: var(--font-size-text-sm);
+    line-height: var(--font-size-text-sm);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--font-line-height-leading-4);
+  }
+}
