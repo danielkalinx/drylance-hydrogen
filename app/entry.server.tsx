@@ -16,8 +16,6 @@ export default async function handleRequest(
       checkoutDomain: context.env.PUBLIC_CHECKOUT_DOMAIN,
       storeDomain: context.env.PUBLIC_STORE_DOMAIN,
     },
-    styleSrc: ["'self'", "'unsafe-inline'", 'https://use.typekit.net'],
-    fontSrc: ["'self'", 'https://use.typekit.net'],
   });
 
   const body = await renderToReadableStream(

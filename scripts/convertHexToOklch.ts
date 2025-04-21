@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import {hexToOklchString} from '../app/utils/colorConverter';
+import {hexToOklchString, hslToOklchString} from '../app/utils/colorConverter';
 
-// Regex to match CSS custom property with hex color (captures groups for name and value)
-const CSS_VAR_HEX_REGEX =
-  /--color-([a-zA-Z0-9-]+)-(\d+):\s*(#[A-Fa-f0-9]{6}|#[A-Fa-f0-9]{3})\s*;/g;
+// Regex to match CSS custom property with hex or HSL color (captures groups for name and value)
+const CSS_VAR_COLOR_REGEX =
+  /--([a-zA-Z0-9-]+):\s*((?:#[A-Fa-f0-9]{6}|#[A-Fa-f0-9]{3})|(?:hsl\(\s*\d+\s+\d+%?\s+\d+%?\s*\)))\s*;/g;
 
 function expandShorthandHex(hex: string): string {
   // Remove # if present
@@ -25,12 +25,14 @@ function convertFileColors(filePath: string) {
     // Read the file
     const content = fs.readFileSync(filePath, 'utf8');
 
-    // Replace CSS custom properties with hex colors to OKLCH format
+    // Replace CSS custom properties with hex or HSL colors to OKLCH format
     const updatedContent = content.replace(
-      CSS_VAR_HEX_REGEX,
-      (match, colorName, shade, hexColor) => {
-        const oklchColor = hexToOklchString(hexColor);
-        return `--color-${colorName}-oklch-${shade}: ${oklchColor};`;
+      CSS_VAR_COLOR_REGEX,
+      (match, name, colorValue) => {
+        const oklchColor = colorValue.startsWith('#')
+          ? hexToOklchString(colorValue)
+          : hslToOklchString(colorValue);
+        return `--${name}: ${oklchColor};`;
       },
     );
 

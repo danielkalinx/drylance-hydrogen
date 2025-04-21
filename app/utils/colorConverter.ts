@@ -1,5 +1,5 @@
 /**
- * Color conversion utilities for hex to OKLCH
+ * Color conversion utilities for hex and HSL to OKLCH
  */
 
 /**
@@ -15,6 +15,60 @@ function hexToRgb(hex: string): [number, number, number] {
   const b = parseInt(hex.substring(4, 6), 16) / 255;
 
   return [r, g, b];
+}
+
+/**
+ * Convert HSL color to RGB values
+ * @param h - Hue (0-360)
+ * @param s - Saturation (0-100)
+ * @param l - Lightness (0-100)
+ * @returns RGB values as [r, g, b] in range 0-1
+ */
+function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+  s /= 100;
+  l /= 100;
+
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+  const m = l - c / 2;
+
+  let r = 0,
+    g = 0,
+    b = 0;
+
+  if (0 <= h && h < 60) {
+    [r, g, b] = [c, x, 0];
+  } else if (60 <= h && h < 120) {
+    [r, g, b] = [x, c, 0];
+  } else if (120 <= h && h < 180) {
+    [r, g, b] = [0, c, x];
+  } else if (180 <= h && h < 240) {
+    [r, g, b] = [0, x, c];
+  } else if (240 <= h && h < 300) {
+    [r, g, b] = [x, 0, c];
+  } else if (300 <= h && h < 360) {
+    [r, g, b] = [c, 0, x];
+  }
+
+  return [r + m, g + m, b + m];
+}
+
+/**
+ * Parse HSL color string and convert to RGB
+ * @param hsl - HSL color string in format "hsl(h s% l%)"
+ * @returns RGB values as [r, g, b] in range 0-1
+ */
+function parseHslToRgb(hsl: string): [number, number, number] {
+  const match = hsl.match(/hsl\(\s*(\d+)\s+(\d+)%?\s+(\d+)%?\s*\)/);
+  if (!match) {
+    throw new Error('Invalid HSL color format');
+  }
+
+  const h = parseInt(match[1]);
+  const s = parseInt(match[2]);
+  const l = parseInt(match[3]);
+
+  return hslToRgb(h, s, l);
 }
 
 /**
@@ -83,11 +137,35 @@ export function hexToOklch(hex: string): [number, number, number] {
 }
 
 /**
+ * Convert HSL color to OKLCH
+ * @param hsl - HSL color string in format "hsl(h s% l%)"
+ * @returns OKLCH values as [lightness, chroma, hue]
+ */
+export function hslToOklch(hsl: string): [number, number, number] {
+  const rgb = parseHslToRgb(hsl);
+  const linearRgb = rgbToLinearRgb(rgb);
+  const oklab = linearRgbToOklab(linearRgb);
+  const oklch = oklabToOklch(oklab);
+
+  return oklch;
+}
+
+/**
  * Convert hex to OKLCH CSS string
  * @param hex - Hex color string (with or without #)
  * @returns CSS-formatted OKLCH string
  */
 export function hexToOklchString(hex: string): string {
   const [l, c, h] = hexToOklch(hex);
+  return `oklch(${(l * 100).toFixed(2)}% ${c.toFixed(3)} ${h.toFixed(1)})`;
+}
+
+/**
+ * Convert HSL to OKLCH CSS string
+ * @param hsl - HSL color string in format "hsl(h s% l%)"
+ * @returns CSS-formatted OKLCH string
+ */
+export function hslToOklchString(hsl: string): string {
+  const [l, c, h] = hslToOklch(hsl);
   return `oklch(${(l * 100).toFixed(2)}% ${c.toFixed(3)} ${h.toFixed(1)})`;
 }
