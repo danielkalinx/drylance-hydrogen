@@ -12,6 +12,8 @@ export default async function handleRequest(
   context: AppLoadContext,
 ) {
   const {nonce, header, NonceProvider} = createContentSecurityPolicy({
+    styleSrc: ["'self'", 'https://cdn.shopify.com', 'https://use.typekit.net'],
+    fontSrc: ["'self'", 'https://use.typekit.net', 'https://p.typekit.net'],
     shop: {
       checkoutDomain: context.env.PUBLIC_CHECKOUT_DOMAIN,
       storeDomain: context.env.PUBLIC_STORE_DOMAIN,

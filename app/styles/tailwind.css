@@ -11,6 +11,7 @@
 * available axes:
 'wght' (range from 300.0 to 900.0
 */
+@import url('https://use.typekit.net/tyt0tdt.css');
 
 @import 'tailwindcss';
 @import 'tw-animate-css';
@@ -122,6 +123,24 @@
   --color-sidebar-border-dark: var(--color-zinc-800);
   --color-sidebar-ring-light: var(--color-zinc-400);
   --color-sidebar-ring-dark: var(--color-zinc-300);
+}
+
+@theme {
+  /*
+  2. Theme Variables
+  */
+
+  /* Border Radius */
+  --radius-sm: rounded-lg;
+  --radius-default: rounded-xl;
+  --radius-md: rounded-2xl;
+  --radius-lg: rounded-3xl;
+  --radius-xl: rounded-4xl;
+  --radius-full: rounded-full;
+
+  /* Fonts */
+  --font-sans: 'poppins', sans-serif;
+  --font-display: 'area-variable', sans-serif;
 }
 
 @theme inline {
@@ -241,82 +260,52 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply font-sans bg-background text-foreground;
   }
 
   h1 {
-    font-size: var(--font-size-text-4xl);
-    line-height: var(--font-line-height-leading-10);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: var(--font-letter-spacing-tighter);
-    @media (min-width: 45em) {
-      font-size: var(--font-size-text-5xl);
-    }
+    @apply font-display text-4xl leading-10 font-semibold tracking-tighter md:text-5xl;
   }
 
   h2 {
-    font-size: var(--font-size-text-3xl);
-    line-height: var(--font-line-height-leading-9);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: var(--font-letter-spacing-tight);
+    @apply font-display text-3xl leading-9 font-semibold tracking-tight;
   }
 
   h3 {
-    font-size: var(--font-size-text-2xl);
-    line-height: var(--font-line-height-leading-8);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply font-display text-2xl leading-8 font-semibold tracking-normal;
   }
 
   h4 {
-    font-size: var(--font-size-text-xl);
-    line-height: var(--font-line-height-leading-7);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply font-display text-xl leading-7 font-semibold tracking-normal;
   }
 
   p {
-    font-size: var(--font-size-text-base);
-    line-height: var(--font-line-height-leading-7);
-    font-weight: var(--font-weight-normal);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply text-base leading-7 font-normal tracking-normal;
   }
 
   blockquote {
-    font-size: var(--font-size-text-base);
-    line-height: var(--font-line-height-leading-6);
-    font-weight: var(--font-weight-normal);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply text-base leading-6 font-normal tracking-normal;
   }
 
   ul,
   ol {
-    font-size: var(--font-size-text-base);
-    line-height: var(--font-line-height-leading-7);
-    font-weight: var(--font-weight-normal);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply text-base leading-7 font-normal tracking-normal;
   }
 
   code:not(pre code) {
-    font-size: var(--font-size-text-sm);
-    line-height: var(--font-line-height-leading-5);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply text-sm leading-5 font-semibold tracking-normal;
   }
 
   table {
-    font-size: var(--font-size-text-base);
-    font-weight: var(--font-weight-normal);
-    letter-spacing: var(--font-letter-spacing-normal);
+    @apply text-base font-normal tracking-normal;
   }
 
   th {
-    font-weight: var(--font-weight-bold);
+    @apply font-bold;
   }
 }
 
 @layer components {
-  /* Utility classes that aren't base HTML elements */
   .lead {
     font-size: var(--font-size-text-xl);
     line-height: var(--font-line-height-leading-7);
