@@ -1,6 +1,3 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-
 img {
   border-radius: 4px;
 }
@@ -404,7 +401,7 @@ button.reset:hover:not(:has(> *)) {
 * --------------------------------------------------
 * routes/products.$handle.tsx
 * --------------------------------------------------
-*/
+ 
 .product {
   display: grid;
   @media (min-width: 45em) {
@@ -460,6 +457,8 @@ button.reset:hover:not(:has(> *)) {
 .product-option-label-swatch img {
   width: 100%;
 }
+
+*/
 
 /*
 * --------------------------------------------------

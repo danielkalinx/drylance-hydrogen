@@ -1,0 +1,24 @@
+---
+description: When thinking about the the way to handle prices, product items or design
+globs: 
+alwaysApply: false
+---
+Here is the pricing and configuration for the microfiber towel product.
+It contains information about:
+- The Configuration & prices
+
+
+These are the product configuration options for "Microfiber Towel":
+
+Base Price:
+Size: Size: 40 × 80 cm (€5,80), 40 × 100 cm (€6,20), 50 × 100 cm (€6,60), 75 × 135  cm (€10,20), 80 × 160 cm (€13,20), 80 × 180 cm (€13,60)
+
+Markups:
+Printed Sides: Front (+ €0,00), Both (+ €0,40)
+
+Hangloop Position: Top Left (+ €0,20), Top Center (+ €0,20), Top Right (+ €0,20), Left Side (+ €0,20), Right Side (+ €0,20), Bottom Left (+ €0,20), Bottom Center (+ €0,20), Bottom Right (+ €0,20), No Hangloop (+ €0,00)
+
+Packaging: Mesh Bag (+ €0,80), Textile Bag (+ €1,20), No Bag (+ 0,00)
+
+
+

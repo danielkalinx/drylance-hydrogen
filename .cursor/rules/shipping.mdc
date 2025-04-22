@@ -1,0 +1,11 @@
+---
+description: Creating a shipping logic to get correct shipping price
+globs: 
+alwaysApply: false
+---
+In the Checkout:
+
+
+Shipping: Standard Shipping & Production, Express Shipping & Production. (Will be calulated in the shopify checkout via an external api call based on weight and country)
+
+

@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Project is based on a shopify hydrogen store. Becuase of o highly customized product, the webshop should have a seperate "Product Studio" for highly custom products. This will enable the ust to configure their product and easily understand prices and markups. Shopify Dev currenty allows only for a ~2000 varient limit and at max 3 varient types. This is because every possible price option will be a variation. The Studio should select the price variation item based on the selection.

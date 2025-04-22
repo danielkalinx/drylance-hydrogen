@@ -1,0 +1,47 @@
+---
+description: Design Process Steps. When to dispay which steps based on configuration
+globs: 
+alwaysApply: false
+---
+
+
+
+Design Path Flowchart:
+flowchart TB
+    Start([Start]) --> DesignOptions
+    
+    DesignOptions[Design Options] --> DO_Online[Design Online]
+    DesignOptions --> DO_Professional[Hire a Professional]
+    DesignOptions --> DO_Upload[Design Offline & Upload PDF]
+    DesignOptions --> DO_Skip[Skip for Now]
+    
+    DO_Professional --> End([End])
+    DO_Skip --> End
+    
+    DO_Online --> TowelFrontSide
+    DO_Upload --> TowelFrontSide
+    
+    TowelFrontSide[Towel Front Side] --> TowelBacksideCheck
+    
+    TowelBacksideCheck{Print both sides?} -->|Yes| TowelBackside
+    TowelBacksideCheck -->|No| HangloopCheck
+    
+    TowelBackside[Towel Backside] --> HangloopCheck
+    
+    HangloopCheck{Hangloop?} -->|Yes| Hangloop
+    HangloopCheck -->|No| PackagingCheck
+    
+    Hangloop[Hangloop] --> PackagingCheck
+    
+    PackagingCheck{Packaging Type} -->|Mesh| MeshBag
+    PackagingCheck -->|Textile| TextileBagFront
+    PackagingCheck -->|None| End
+    
+    MeshBag[Mesh Bag] --> End
+    
+    TextileBagFront[Textile Bag Front] --> TextileBagBack
+    TextileBagBack[Textile Bag Back] --> End
+
+
+
+    

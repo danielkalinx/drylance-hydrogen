@@ -1,0 +1,63 @@
+---
+description: When topis is about Tiered Bulk Discount + Reseller Bonus
+globs: 
+alwaysApply: false
+---
+Programmalticy applied discounts before Checkout.
+Bulk Discounts: (0%≥0 pcs; 4%≥1000 pcs; 8%≥2000 pcs; 12%≥4000 pcs; 16%≥7500 pcs)
+
+
+Now a Q&A on how to best appy the tiered and reseller discount:
+
+Question:
+Kann, wen der user einen bestimmten status hat bsp "reseller", dann darauf auch noch zusätzlich 15% abgezogen werden?
+
+Awnser:
+Ja. Du ergänzt einfach in deiner gleichen Cart‑Discount‑Function noch eine Prüfung auf den Kunden‑Tag „reseller“ und fügst bei Bedarf einen weiteren Prozentrabatt hinzu. Zum Beispiel so:
+
+
+```js
+
+import { createFunctionHandler } from '@shopify/function';
+import { CartDiscounts } from '@shopify/function/dist/definitions';
+
+export default createFunctionHandler<CartDiscounts>((Cart) => {
+  // 1) Deine Bulk‑Stufen, absteigend sortiert
+  const tiers = [
+    { min: 7500, pct: 16 },
+    { min: 4000, pct: 12 },
+    { min: 2000, pct: 8  },
+    { min: 1000, pct: 4  },
+  ];
+  const totalQty = Cart.lines.reduce((sum, line) => sum + line.quantity, 0);
+  const tier = tiers.find(t => totalQty >= t.min);
+  if (tier) {
+    Cart.addOrderDiscount({
+      discountValue: { type: 'percentage', value: tier.pct },
+      message: `Bulk‑Rabatt ${tier.pct}%`,
+    });
+  }
+
+  // 2) Prüfe, ob Kunde das Tag “reseller” hat
+  //    buyerIdentity.customer.hasAnyTag() liefert true/false
+  if (
+    Cart.buyerIdentity.customer
+    && Cart.buyerIdentity.customer.hasAnyTag(['reseller'])
+  ) {
+    Cart.addOrderDiscount({
+      discountValue: { type: 'percentage', value: 15 },
+      message: 'Reseller‑Rabatt 15%',
+    });
+  }
+
+  return Cart.build();
+});
+
+```
+
+Wichtige Details:
+	•	Cart.buyerIdentity.customer.hasAnyTag(['reseller']) checkt, ob der eingeloggte Kunde das Tag “reseller” hat.
+	•	Du kannst so viele addOrderDiscount‑Aufrufe machen, wie nötig – sie werden nacheinander verrechnet.
+	•	Wenn du statt zwei separater Rabatte lieber einen kombinierten Prozentsatz verwenden möchtest, berechnest du einfach tier.pct + 15 und übergibst das als einen einzigen Rabatt.
+
+Nach dem Deployen (shopify app deploy) und Aktivieren der Function im Admin wird bei jedem linesUpdate in deinem Hydrogen‑Frontend zuerst der Bulk‑Rabatt und dann der Reseller‑Rabatt automatisch angewendet.
