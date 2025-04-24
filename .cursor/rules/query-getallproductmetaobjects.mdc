@@ -1,0 +1,349 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Using this query:
+
+query GetAllProductMetaobjects($productId: ID!) {
+  product(id: $productId) {
+    metafields(first: 50) {
+      nodes {
+        id
+        type
+        reference {
+          ... on Metaobject {
+            fields {
+              references(first: 10) {
+                nodes {
+                  ... on Metaobject {
+                    displayName
+                    fields {
+                      jsonValue
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+{
+  "productId": "gid://shopify/Product/15182509474137"
+}
+
+The expected output is:
+{
+  "data": {
+    "product": {
+      "metafields": {
+        "nodes": [
+          {
+            "id": "gid://shopify/Metafield/179174082511193",
+            "type": "metaobject_reference",
+            "reference": {
+              "fields": [
+                {
+                  "references": {
+                    "nodes": [
+                      {
+                        "displayName": "Towel Size  80x180",
+                        "fields": [
+                          {
+                            "jsonValue": "80 × 180 cm"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "13.6",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Towel Size  80x160",
+                        "fields": [
+                          {
+                            "jsonValue": "80 × 160 cm"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "13.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Towel Size  75x135",
+                        "fields": [
+                          {
+                            "jsonValue": "75 × 135  cm"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "10.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Towel Size  40x80",
+                        "fields": [
+                          {
+                            "jsonValue": "40 × 80 cm"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "5.8",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Towel Size  40x100",
+                        "fields": [
+                          {
+                            "jsonValue": "40 × 100"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "6.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Towel Size  50x100",
+                        "fields": [
+                          {
+                            "jsonValue": "50 × 100 cm"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "6.6",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "references": {
+                    "nodes": [
+                      {
+                        "displayName": "Printed Sides Both",
+                        "fields": [
+                          {
+                            "jsonValue": "Both"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.4",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Printed Sides Front",
+                        "fields": [
+                          {
+                            "jsonValue": "Front"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.0",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "references": {
+                    "nodes": [
+                      {
+                        "displayName": "Hangloop Position Top Left",
+                        "fields": [
+                          {
+                            "jsonValue": "Top Left"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Top Right",
+                        "fields": [
+                          {
+                            "jsonValue": "Top Right"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Top Center",
+                        "fields": [
+                          {
+                            "jsonValue": "Top Center"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Left Side",
+                        "fields": [
+                          {
+                            "jsonValue": "Left Side"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Right Side",
+                        "fields": [
+                          {
+                            "jsonValue": "Right Side"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Bottom Center",
+                        "fields": [
+                          {
+                            "jsonValue": "Bottom Center"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Bottom Left",
+                        "fields": [
+                          {
+                            "jsonValue": "Bottom Left"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position Bottom Right",
+                        "fields": [
+                          {
+                            "jsonValue": "Bottom Right"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.2",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Hangloop Position No Hangloop",
+                        "fields": [
+                          {
+                            "jsonValue": "No Hangloop"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.0",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "references": {
+                    "nodes": [
+                      {
+                        "displayName": "Printed Sides Both",
+                        "fields": [
+                          {
+                            "jsonValue": "Both"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.4",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Printed Sides Front",
+                        "fields": [
+                          {
+                            "jsonValue": "Front"
+                          },
+                          {
+                            "jsonValue": {
+                              "amount": "0.0",
+                              "currency_code": "EUR"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+
+
