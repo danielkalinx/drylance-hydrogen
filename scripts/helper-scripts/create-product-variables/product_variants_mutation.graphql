@@ -1,11 +1,14 @@
 
-mutation ProductVariantsBulkCreate($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
+mutation productVariantsBulkCreate($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
   productVariantsBulkCreate(productId: $productId, variants: $variants) {
     productVariants {
       id
-      title
+      selectedOptions {
+        name
+        value
+      }
       price
-      metafields {
+      metafields(first: 250) {
         edges {
           node {
             key

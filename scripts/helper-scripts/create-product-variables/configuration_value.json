@@ -72,6 +72,76 @@
               "displayName": "Bottom Right",
               "type": "configuration_value"
             }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688525657",
+              "displayName": "Front",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688558425",
+              "displayName": "Left Side",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688591193",
+              "displayName": "mesh-bag",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688689497",
+              "displayName": "none",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688722265",
+              "displayName": "Right Side",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688755033",
+              "displayName": "textile-bag",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688787801",
+              "displayName": "Top Center",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688820569",
+              "displayName": "Top Left",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688984409",
+              "displayName": "Top Right",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344715395417",
+              "displayName": "Hangloop None",
+              "type": "configuration_value"
+            }
           }
         ],
         "nodes": [
@@ -738,6 +808,616 @@
                 "key": "packaging"
               }
             ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Front",
+                "value": "Front",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.0",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660803929",
+                "value": "gid://shopify/Metaobject/344660803929",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": "Front",
+                "value": "Front",
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Left Side",
+                "value": "Left Side",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "left-side",
+                "value": "left-side",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Mesh Bag",
+                "value": "Mesh Bag",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.8",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.80\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660967769",
+                "value": "gid://shopify/Metaobject/344660967769",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": "mesh-bag",
+                "value": "mesh-bag",
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "No Bag",
+                "value": "No Bag",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.0",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660967769",
+                "value": "gid://shopify/Metaobject/344660967769",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": "none",
+                "value": "none",
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Right Side",
+                "value": "Right Side",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "right-side",
+                "value": "right-side",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Textile Bag",
+                "value": "Textile Bag",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "1.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"1.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660967769",
+                "value": "gid://shopify/Metaobject/344660967769",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": "textile-bag",
+                "value": "textile-bag",
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Top Center",
+                "value": "Top Center",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "top-center",
+                "value": "top-center",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Top Left",
+                "value": "Top Left",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "top-left",
+                "value": "top-left",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Top Right",
+                "value": "Top Right",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "top-right",
+                "value": "top-right",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "No Hangloop",
+                "value": "No Hangloop",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.0",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "none",
+                "value": "none",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
           }
         ]
       },
@@ -746,11 +1426,11 @@
   },
   "extensions": {
     "cost": {
-      "requestedQueryCost": 15,
-      "actualQueryCost": 15,
+      "requestedQueryCost": 30,
+      "actualQueryCost": 18,
       "throttleStatus": {
         "maximumAvailable": 2000,
-        "currentlyAvailable": 1985,
+        "currentlyAvailable": 1982,
         "restoreRate": 100
       }
     }
