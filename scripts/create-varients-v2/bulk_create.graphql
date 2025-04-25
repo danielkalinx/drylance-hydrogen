@@ -1,0 +1,1673 @@
+mutation ProductVariantsCreate($productId: ID!, $variants: [ProductVariantsBulkInput!]!) {
+  productVariantsBulkCreate(productId: $productId, variants: $variants) {
+    productVariants {
+      id
+      title
+      selectedOptions { name value }
+      metafields(first: 10) { edges { node { namespace key value } } }
+    }
+    userErrors { field message }
+  }
+}
+
+{
+  "productId": "gid://shopify/Product/15391530385753",
+  "variants": [
+    {
+      "price": 6.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 5.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 80 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 8.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "40 \u00d7 100 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 8.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 8.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 8.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 8.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "50 \u00d7 100 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 10.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 10.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 10.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 11.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 12.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 10.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "75 \u00d7 135 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 15.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 160 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.6,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 15.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Front | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.8,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | No Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 15.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | No Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | No Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 15.0,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | Hangloop | Mesh Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 15.4,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | Hangloop | Textile Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "optionValues": [
+        {
+          "optionId": "gid://shopify/ProductOption/17750055289177",
+          "name": "80 \u00d7 180 cm | Both sides | Hangloop | No Bag"
+        }
+      ],
+      "metafields": [
+        {
+          "namespace": "custom",
+          "key": "variations",
+          "type": "metaobject_reference",
+          "value": "gid://shopify/Metaobject/344597561689"
+        },
+        {
+          "namespace": "custom",
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470.0, \"unit\": \"GRAMS\"}"
+        }
+      ]
+    }
+  ]
+}

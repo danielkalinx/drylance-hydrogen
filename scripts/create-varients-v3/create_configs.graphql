@@ -1,0 +1,3241 @@
+mutation BulkCreateConfigurations {
+  conf_001: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_002: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_003: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_004: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_005: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_006: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_007: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_008: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_009: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_010: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_011: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_012: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_013: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_014: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_015: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_016: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_017: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_018: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_019: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_020: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_021: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_022: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_023: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_024: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_025: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_026: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_027: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_028: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_029: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_030: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_031: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_032: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_033: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_034: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_035: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_036: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_037: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_038: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_039: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_040: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_041: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_042: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_043: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_044: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_045: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_046: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_047: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_048: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_049: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_050: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_051: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_052: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_053: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_054: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592023897", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_055: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_056: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_057: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_058: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_059: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_060: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_061: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_062: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_063: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_064: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_065: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_066: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_067: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_068: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_069: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_070: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_071: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_072: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_073: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_074: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_075: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_076: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_077: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_078: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_079: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_080: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_081: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_082: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_083: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_084: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_085: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_086: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_087: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_088: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_089: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_090: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_091: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_092: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_093: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_094: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_095: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_096: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_097: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_098: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_099: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_100: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_101: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_102: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_103: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_104: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_105: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_106: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_107: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_108: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592056665", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_109: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_110: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_111: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_112: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_113: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_114: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_115: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_116: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_117: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_118: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_119: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_120: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_121: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_122: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_123: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_124: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_125: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_126: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_127: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_128: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_129: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_130: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_131: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_132: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_133: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_134: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_135: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_136: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_137: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_138: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_139: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_140: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_141: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_142: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_143: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_144: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_145: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_146: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_147: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_148: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_149: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_150: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_151: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_152: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_153: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_154: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_155: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_156: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_157: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_158: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_159: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_160: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_161: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_162: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592089433", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_163: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_164: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_165: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_166: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_167: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_168: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_169: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_170: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_171: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_172: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_173: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_174: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_175: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_176: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_177: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_178: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_179: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_180: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_181: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_182: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_183: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_184: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_185: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_186: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_187: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_188: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_189: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_190: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_191: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_192: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_193: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_194: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_195: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_196: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_197: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_198: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_199: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_200: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_201: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_202: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_203: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_204: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_205: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_206: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_207: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_208: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_209: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_210: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_211: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_212: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_213: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_214: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_215: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_216: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592122201", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_217: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_218: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_219: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_220: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_221: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_222: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_223: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_224: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_225: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_226: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_227: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_228: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_229: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_230: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_231: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_232: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_233: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_234: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_235: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_236: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_237: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_238: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_239: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_240: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_241: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_242: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_243: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_244: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_245: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_246: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_247: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_248: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_249: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_250: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_251: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_252: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_253: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_254: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_255: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_256: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_257: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_258: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_259: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_260: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_261: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_262: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_263: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_264: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_265: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_266: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_267: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_268: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_269: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_270: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592154969", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_271: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_272: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_273: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_274: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_275: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_276: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_277: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_278: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_279: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_280: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_281: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_282: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_283: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_284: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_285: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_286: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_287: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_288: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_289: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_290: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_291: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_292: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_293: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_294: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_295: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_296: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_297: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592384345", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_298: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_299: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_300: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592941401", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_301: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_302: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_303: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344592974169", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_304: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_305: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_306: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593006937", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_307: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_308: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_309: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593039705", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_310: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_311: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_312: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593072473", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_313: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_314: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_315: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593105241", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_316: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_317: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_318: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593138009", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_319: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_320: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_321: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593170777", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_322: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593269081"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_323: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593301849"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+
+  conf_324: metaobjectCreate(metaobject: {
+    type: "mft_configuration",
+    fields: [
+      { key: "configurations", value: "["gid://shopify/Metaobject/344592187737", "gid://shopify/Metaobject/344592417113", "gid://shopify/Metaobject/344593203545", "gid://shopify/Metaobject/344593334617"]" }
+    ]
+  }) {
+    metaobject { id }
+    userErrors { field message }
+  }
+}

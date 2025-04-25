@@ -1,0 +1,103 @@
+mutation BulkCreateConfigurationValues(
+$size_40_80_cm: MetaobjectCreateInput!,
+$size_40_100_cm: MetaobjectCreateInput!,
+$size_50_100_cm: MetaobjectCreateInput!,
+$size_75_135_cm: MetaobjectCreateInput!,
+$size_80_160_cm: MetaobjectCreateInput!,
+$size_80_180_cm: MetaobjectCreateInput!,
+$printed_front: MetaobjectCreateInput!,
+$printed_both_sides: MetaobjectCreateInput!,
+$hangloop_top_left: MetaobjectCreateInput!,
+$hangloop_top_center: MetaobjectCreateInput!,
+$hangloop_top_right: MetaobjectCreateInput!,
+$hangloop_left_side: MetaobjectCreateInput!,
+$hangloop_right_side: MetaobjectCreateInput!,
+$hangloop_bottom_left: MetaobjectCreateInput!,
+$hangloop_bottom_center: MetaobjectCreateInput!,
+$hangloop_bottom_right: MetaobjectCreateInput!,
+$hangloop_no_hangloop: MetaobjectCreateInput!,
+$packaging_mesh_bag: MetaobjectCreateInput!,
+$packaging_textile_bag: MetaobjectCreateInput!,
+$packaging_no_bag: MetaobjectCreateInput!
+) {
+  size_40_80_cm: metaobjectCreate(metaobject: $size_40_80_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  size_40_100_cm: metaobjectCreate(metaobject: $size_40_100_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  size_50_100_cm: metaobjectCreate(metaobject: $size_50_100_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  size_75_135_cm: metaobjectCreate(metaobject: $size_75_135_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  size_80_160_cm: metaobjectCreate(metaobject: $size_80_160_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  size_80_180_cm: metaobjectCreate(metaobject: $size_80_180_cm) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  printed_front: metaobjectCreate(metaobject: $printed_front) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  printed_both_sides: metaobjectCreate(metaobject: $printed_both_sides) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_top_left: metaobjectCreate(metaobject: $hangloop_top_left) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_top_center: metaobjectCreate(metaobject: $hangloop_top_center) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_top_right: metaobjectCreate(metaobject: $hangloop_top_right) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_left_side: metaobjectCreate(metaobject: $hangloop_left_side) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_right_side: metaobjectCreate(metaobject: $hangloop_right_side) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_bottom_left: metaobjectCreate(metaobject: $hangloop_bottom_left) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_bottom_center: metaobjectCreate(metaobject: $hangloop_bottom_center) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_bottom_right: metaobjectCreate(metaobject: $hangloop_bottom_right) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  hangloop_no_hangloop: metaobjectCreate(metaobject: $hangloop_no_hangloop) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  packaging_mesh_bag: metaobjectCreate(metaobject: $packaging_mesh_bag) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  packaging_textile_bag: metaobjectCreate(metaobject: $packaging_textile_bag) {
+    metaobject { id }
+    userErrors { field message }
+  }
+  packaging_no_bag: metaobjectCreate(metaobject: $packaging_no_bag) {
+    metaobject { id }
+    userErrors { field message }
+  }
+}

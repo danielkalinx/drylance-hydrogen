@@ -1,0 +1,517 @@
+{
+  "data": {
+    "sizeOptions": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592023897",
+            "fields": [
+              {
+                "key": "name",
+                "value": "40 × 80 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":120.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":40.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":80.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"5.80\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592056665",
+            "fields": [
+              {
+                "key": "name",
+                "value": "40 × 100 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":160.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":40.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":100.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"6.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592089433",
+            "fields": [
+              {
+                "key": "name",
+                "value": "50 × 100 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":200.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":50.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":100.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"6.60\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592122201",
+            "fields": [
+              {
+                "key": "name",
+                "value": "75 × 135 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":300.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":75.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":135.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"10.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592154969",
+            "fields": [
+              {
+                "key": "name",
+                "value": "80 × 160 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":470.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":80.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":160.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"13.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592187737",
+            "fields": [
+              {
+                "key": "name",
+                "value": "80 × 180 cm"
+              },
+              {
+                "key": "weight",
+                "value": "{\"value\":470.0,\"unit\":\"GRAMS\"}"
+              },
+              {
+                "key": "width",
+                "value": "{\"value\":80.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "height",
+                "value": "{\"value\":180.0,\"unit\":\"CENTIMETERS\"}"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"13.60\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "printedSides": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592384345",
+            "fields": [
+              {
+                "key": "side",
+                "value": "Front"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592417113",
+            "fields": [
+              {
+                "key": "side",
+                "value": "Both sides"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.40\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "hangloopOptions": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592941401",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Top Left"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344592974169",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Top Center"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593006937",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Top Right"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593039705",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Left Side"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593072473",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Right Side"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593105241",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Bottom Left"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593138009",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Bottom Center"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593170777",
+            "fields": [
+              {
+                "key": "position",
+                "value": "Bottom Right"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593203545",
+            "fields": [
+              {
+                "key": "position",
+                "value": "No Hangloop"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "packagingOptions": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593269081",
+            "fields": [
+              {
+                "key": "packaging",
+                "value": "Mesh Bag"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.80\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593301849",
+            "fields": [
+              {
+                "key": "packaging",
+                "value": "Textile Bag"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"1.20\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/Metaobject/344593334617",
+            "fields": [
+              {
+                "key": "packaging",
+                "value": "No Bag"
+              },
+              {
+                "key": "price",
+                "value": "{\"amount\":\"0.00\",\"currency_code\":\"EUR\"}"
+              },
+              {
+                "key": "product",
+                "value": "gid://shopify/Product/15391530385753"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 80,
+      "actualQueryCost": 28,
+      "throttleStatus": {
+        "maximumAvailable": 2000,
+        "currentlyAvailable": 1972,
+        "restoreRate": 100
+      }
+    },
+    "search": [
+      {
+        "path": ["sizeOptions"],
+        "query": "fields.product:\"gid://shopify/Product/15391530385753\"",
+        "parsed": {
+          "field": "fields.product",
+          "match_phrase": "gid://shopify/Product/15391530385753"
+        }
+      },
+      {
+        "path": ["printedSides"],
+        "query": "fields.product:\"gid://shopify/Product/15391530385753\"",
+        "parsed": {
+          "field": "fields.product",
+          "match_phrase": "gid://shopify/Product/15391530385753"
+        }
+      },
+      {
+        "path": ["hangloopOptions"],
+        "query": "fields.product:\"gid://shopify/Product/15391530385753\"",
+        "parsed": {
+          "field": "fields.product",
+          "match_phrase": "gid://shopify/Product/15391530385753"
+        }
+      },
+      {
+        "path": ["packagingOptions"],
+        "query": "fields.product:\"gid://shopify/Product/15391530385753\"",
+        "parsed": {
+          "field": "fields.product",
+          "match_phrase": "gid://shopify/Product/15391530385753"
+        }
+      }
+    ]
+  }
+}
