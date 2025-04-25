@@ -1,0 +1,758 @@
+{
+  "data": {
+    "metaobjectDefinition": {
+      "metaobjects": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688132441",
+              "displayName": "40 X 80 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688230745",
+              "displayName": "40 X 100 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688263513",
+              "displayName": "50 X 100 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688296281",
+              "displayName": "75 X 135 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688329049",
+              "displayName": "80 X 160 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688361817",
+              "displayName": "80 X 180 Cm",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688394585",
+              "displayName": "Both Sides",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688427353",
+              "displayName": "Bottom Center",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688460121",
+              "displayName": "Bottom Left",
+              "type": "configuration_value"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344688492889",
+              "displayName": "Bottom Right",
+              "type": "configuration_value"
+            }
+          }
+        ],
+        "nodes": [
+          {
+            "fields": [
+              {
+                "jsonValue": "40 × 80 cm",
+                "value": "40 × 80 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "5.8",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"5.80\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 120,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":120.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 40,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":40.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 80,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":80.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "40 × 100 cm",
+                "value": "40 × 100 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "6.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"6.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 160,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":160.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 40,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":40.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 100,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":100.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "50 × 100 cm",
+                "value": "50 × 100 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "6.6",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"6.60\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 200,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":200.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 50,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":50.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 100,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":100.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "75 × 135 cm",
+                "value": "75 × 135 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "10.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"10.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 300,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":300.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 75,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":75.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 135,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":135.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "80 × 160 cm",
+                "value": "80 × 160 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "13.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"13.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 470,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":470.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 80,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":80.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 160,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":160.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "80 × 180 cm",
+                "value": "80 × 180 cm",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "13.6",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"13.60\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": {
+                  "value": 470,
+                  "unit": "GRAMS"
+                },
+                "value": "{\"value\":470.0,\"unit\":\"GRAMS\"}",
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": {
+                  "value": 80,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":80.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": {
+                  "value": 180,
+                  "unit": "MILLIMETERS"
+                },
+                "value": "{\"value\":180.0,\"unit\":\"MILLIMETERS\"}",
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660902233",
+                "value": "gid://shopify/Metaobject/344660902233",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Both sides",
+                "value": "Both sides",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.4",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.40\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660803929",
+                "value": "gid://shopify/Metaobject/344660803929",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": "Both sides",
+                "value": "Both sides",
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Bottom Center",
+                "value": "Bottom Center",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "bottom-center",
+                "value": "bottom-center",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Bottom Left",
+                "value": "Bottom Left",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "bottom-left",
+                "value": "bottom-left",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Bottom Right",
+                "value": "Bottom Right",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": {
+                  "amount": "0.2",
+                  "currency_code": "EUR"
+                },
+                "value": "{\"amount\":\"0.20\",\"currency_code\":\"EUR\"}",
+                "type": "money",
+                "key": "price"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "weight",
+                "key": "weight"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "width"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "dimension",
+                "key": "height"
+              },
+              {
+                "jsonValue": "gid://shopify/Metaobject/344660935001",
+                "value": "gid://shopify/Metaobject/344660935001",
+                "type": "metaobject_reference",
+                "key": "option_id"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "print_sides"
+              },
+              {
+                "jsonValue": "bottom-right",
+                "value": "bottom-right",
+                "type": "single_line_text_field",
+                "key": "hangloop_position"
+              },
+              {
+                "jsonValue": null,
+                "value": null,
+                "type": "single_line_text_field",
+                "key": "packaging"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "configuration_value"
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 15,
+      "actualQueryCost": 15,
+      "throttleStatus": {
+        "maximumAvailable": 2000,
+        "currentlyAvailable": 1985,
+        "restoreRate": 100
+      }
+    }
+  }
+}

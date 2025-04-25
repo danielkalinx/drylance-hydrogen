@@ -1,0 +1,32 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "40-x-80-cm",
+    "fields": [
+      {
+        "key": "name",
+        "value": "40 \u00d7 80 cm"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"5.80\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "weight",
+        "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+      },
+      {
+        "key": "width",
+        "value": "{\"value\": 40, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "height",
+        "value": "{\"value\": 80, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660902233"
+      }
+    ]
+  }
+}

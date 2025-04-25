@@ -1,0 +1,24 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "bottom-left",
+    "fields": [
+      {
+        "key": "name",
+        "value": "Bottom Left"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"0.20\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660935001"
+      },
+      {
+        "key": "hangloop_position",
+        "value": "bottom-left"
+      }
+    ]
+  }
+}

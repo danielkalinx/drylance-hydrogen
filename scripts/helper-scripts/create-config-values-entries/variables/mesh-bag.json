@@ -1,0 +1,24 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "mesh-bag",
+    "fields": [
+      {
+        "key": "name",
+        "value": "Mesh Bag"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"0.80\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660967769"
+      },
+      {
+        "key": "packaging",
+        "value": "mesh-bag"
+      }
+    ]
+  }
+}

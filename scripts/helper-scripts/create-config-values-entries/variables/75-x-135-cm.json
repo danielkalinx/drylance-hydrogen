@@ -1,0 +1,32 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "75-x-135-cm",
+    "fields": [
+      {
+        "key": "name",
+        "value": "75 \u00d7 135 cm"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"10.20\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "weight",
+        "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+      },
+      {
+        "key": "width",
+        "value": "{\"value\": 75, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "height",
+        "value": "{\"value\": 135, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660902233"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "80-x-180-cm",
+    "fields": [
+      {
+        "key": "name",
+        "value": "80 \u00d7 180 cm"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"13.60\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "weight",
+        "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+      },
+      {
+        "key": "width",
+        "value": "{\"value\": 80, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "height",
+        "value": "{\"value\": 180, \"unit\": \"MILLIMETERS\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660902233"
+      }
+    ]
+  }
+}

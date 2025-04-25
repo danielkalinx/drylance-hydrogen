@@ -1,147 +1,165 @@
 #!/usr/bin/env python3
 import json
+import os
 import re
 
-# === Configuration ===
-# The metaobject definition type handle:
-METAOBJECT_TYPE = "configuration_value"
-
-# The four configuration_option metaobject IDs you provided:
+# Universal GraphQL mutation filename
+gql_filename = "create_metaobject.graphql"
+# Directory for per-entry variables JSON
+var_dir = "variables"
+# Metaobject type for configuration_value
+TYPE_NAME = "configuration_value"
+# Existing configuration_option metaobject IDs
 OPTION_IDS = {
-    "Towel Size":           "gid://shopify/Metaobject/344660902233",
-    "Printed Sides":        "gid://shopify/Metaobject/344660803929",
-    "Hangloop Position":    "gid://shopify/Metaobject/344660935001",
-    "Packaging":            "gid://shopify/Metaobject/344660967769",
+    "towel_size":        "gid://shopify/Metaobject/344660902233",
+    "printed_sides":     "gid://shopify/Metaobject/344660803929",
+    "hangloop_position": "gid://shopify/Metaobject/344660935001",
+    "packaging":         "gid://shopify/Metaobject/344660967769",
 }
 
-# Your six towel sizes (name, price €, weight g, width cm, height cm)
-SIZES = [
-    ("40 × 80 cm",  "5.80", 120, 40,  80),
-    ("40 × 100 cm", "6.20", 160, 40, 100),
-    ("50 × 100 cm", "6.60", 200, 50, 100),
-    ("75 × 135 cm", "10.20",300, 75, 135),
-    ("80 × 160 cm", "13.20",470, 80, 160),
-    ("80 × 180 cm", "13.60",470, 80, 180),
-]
+# Helper to slugify strings for handles
+def slugify(s):
+    slug = s.lower().replace(' ', '-').replace('×', 'x')
+    return re.sub(r'[^a-z0-9\-]', '', slug)
 
-# Printed sides options (name, markup € , internal value)
-PRINTED_SIDES = [
-    ("Front",       "0.00", "Front"),
-    ("Both sides",  "0.40", "Both sides"),
-]
+# Build all entries with only non-null fields
+def build_entries():
+    entries = []
 
-# Hangloop positions (name, markup € , internal value)
-HANGLOOP_POSITIONS = [
-    ("Top Left",      "0.20", "top-left"),
-    ("Top Center",    "0.20", "top-center"),
-    ("Top Right",     "0.20", "top-right"),
-    ("Left Side",     "0.20", "left-side"),
-    ("Right Side",    "0.20", "right-side"),
-    ("Bottom Left",   "0.20", "bottom-left"),
-    ("Bottom Center", "0.20", "bottom-center"),
-    ("Bottom Right",  "0.20", "bottom-right"),
-    ("No Hangloop",   "0.00", "none"),
-]
+    # Common filter to drop null-valued fields
+    def filter_fields(fields):
+        return [f for f in fields if f.get('value') is not None]
 
-# Packaging options (name, markup € , internal value)
-PACKAGING = [
-    ("Mesh Bag",    "0.80", "mesh-bag"),
-    ("Textile Bag", "1.20", "textile-bag"),
-    ("No Bag",      "0.00", "none"),
-]
+    # Towel sizes
+    for name, price, weight, width, height in [
+        ("40 × 80 cm",  "5.80", 120, 40, 80),
+        ("40 × 100 cm", "6.20", 160, 40, 100),
+        ("50 × 100 cm", "6.60", 200, 50, 100),
+        ("75 × 135 cm", "10.20", 300, 75, 135),
+        ("80 × 160 cm", "13.20", 470, 80, 160),
+        ("80 × 180 cm", "13.60", 470, 80, 180),
+    ]:
+        handle = slugify(name)
+        fields = [
+            {"key": "name",      "value": name},
+            {"key": "price",     "value": json.dumps({"amount": price, "currency_code": "EUR"})},
+            {"key": "weight",    "value": json.dumps({"value": weight,  "unit": "GRAMS"})},
+            {"key": "width",     "value": json.dumps({"value": width,   "unit": "MILLIMETERS"})},
+            {"key": "height",    "value": json.dumps({"value": height,  "unit": "MILLIMETERS"})},
+            {"key": "option_id", "value": OPTION_IDS["towel_size"]},
+            {"key": "print_sides",       "value": None},
+            {"key": "hangloop_position", "value": None},
+            {"key": "packaging",         "value": None},
+        ]
+        entries.append({
+            "handle": handle,
+            "input": {
+                "type": TYPE_NAME,
+                "handle": handle,
+                "fields": filter_fields(fields)
+            }
+        })
 
-# === Helper to sanitize a name into a valid GraphQL variable name ===
-def sanitize_var(name: str) -> str:
-    # lower-case, replace non-alphanumeric with underscore, collapse multiple underscores
-    s = re.sub(r"[^\w]", "_", name.strip().lower())
-    return re.sub(r"_+", "_", s).strip("_")
+    # Printed sides
+    for name, price, val in [("Front", "0.00", "Front"),
+                              ("Both sides", "0.40", "Both sides")]:
+        handle = slugify(name)
+        fields = [
+            {"key": "name",      "value": name},
+            {"key": "price",     "value": json.dumps({"amount": price, "currency_code": "EUR"})},
+            {"key": "weight",    "value": None},
+            {"key": "width",     "value": None},
+            {"key": "height",    "value": None},
+            {"key": "option_id", "value": OPTION_IDS["printed_sides"]},
+            {"key": "print_sides","value": val},
+            {"key": "hangloop_position", "value": None},
+            {"key": "packaging",         "value": None},
+        ]
+        entries.append({
+            "handle": handle,
+            "input": {
+                "type": TYPE_NAME,
+                "handle": handle,
+                "fields": filter_fields(fields)
+            }
+        })
 
-# === Build up all entries ===
-entries = []  # list of (var_name, fields_list)
+    # Hangloop positions
+    for pos in ["top-left","top-center","top-right",
+                "left-side","right-side",
+                "bottom-left","bottom-center","bottom-right",
+                "none"]:
+        handle = slugify(pos)
+        name = pos.replace('-', ' ').title()
+        price = "0.20" if pos != "none" else "0.00"
+        fields = [
+            {"key": "name",               "value": name},
+            {"key": "price",              "value": json.dumps({"amount": price, "currency_code": "EUR"})},
+            {"key": "weight",             "value": None},
+            {"key": "width",              "value": None},
+            {"key": "height",             "value": None},
+            {"key": "option_id",          "value": OPTION_IDS["hangloop_position"]},
+            {"key": "print_sides",        "value": None},
+            {"key": "hangloop_position",  "value": pos},
+            {"key": "packaging",          "value": None},
+        ]
+        entries.append({
+            "handle": handle,
+            "input": {
+                "type": TYPE_NAME,
+                "handle": handle,
+                "fields": filter_fields(fields)
+            }
+        })
 
-# 1) Towel sizes
-for name, price, weight, width, height in SIZES:
-    var = "size_" + sanitize_var(name)
-    fields = [
-        {"key": "Name",       "value": name},
-        {"key": "Price",      "value": json.dumps({"amount": price, "currencyCode": "EUR"})},
-        {"key": "Weight",     "value": json.dumps({"value": weight, "unit": "GRAMS"})},
-        {"key": "Width",      "value": json.dumps({"value": width,  "unit": "CENTIMETERS"})},
-        {"key": "Height",     "value": json.dumps({"value": height, "unit": "CENTIMETERS"})},
-        {"key": "Option ID",  "value": OPTION_IDS["Towel Size"]},
-    ]
-    entries.append((var, fields))
+    # Packaging options
+    for name, price, val in [("Mesh Bag", "0.80", "mesh-bag"),
+                              ("Textile Bag","1.20","textile-bag"),
+                              ("No Bag",     "0.00","none")]:
+        handle = slugify(val)
+        fields = [
+            {"key": "name",      "value": name},
+            {"key": "price",     "value": json.dumps({"amount": price, "currency_code": "EUR"})},
+            {"key": "weight",    "value": None},
+            {"key": "width",     "value": None},
+            {"key": "height",    "value": None},
+            {"key": "option_id", "value": OPTION_IDS["packaging"]},
+            {"key": "print_sides",       "value": None},
+            {"key": "hangloop_position", "value": None},
+            {"key": "packaging",         "value": val},
+        ]
+        entries.append({
+            "handle": handle,
+            "input": {
+                "type": TYPE_NAME,
+                "handle": handle,
+                "fields": filter_fields(fields)
+            }
+        })
 
-# 2) Printed sides
-for name, price, internal in PRINTED_SIDES:
-    var = "printed_" + sanitize_var(name)
-    fields = [
-        {"key": "Name",      "value": name},
-        {"key": "Price",     "value": json.dumps({"amount": price, "currencyCode": "EUR"})},
-        {"key": "Weight",    "value": json.dumps({"value": 0, "unit": "GRAMS"})},
-        {"key": "Option ID", "value": OPTION_IDS["Printed Sides"]},
-        {"key": "Print Sides", "value": internal},
-    ]
-    entries.append((var, fields))
+    return entries
 
-# 3) Hangloop positions
-for name, price, internal in HANGLOOP_POSITIONS:
-    var = "hangloop_" + sanitize_var(name)
-    fields = [
-        {"key": "Name",      "value": name},
-        {"key": "Price",     "value": json.dumps({"amount": price, "currencyCode": "EUR"})},
-        {"key": "Weight",    "value": json.dumps({"value": 0, "unit": "GRAMS"})},
-        {"key": "Option ID", "value": OPTION_IDS["Hangloop Position"]},
-        {"key": "Hangloop Position", "value": internal},
-    ]
-    entries.append((var, fields))
+# Ensure output directory exists
+os.makedirs(var_dir, exist_ok=True)
 
-# 4) Packaging
-for name, price, internal in PACKAGING:
-    var = "packaging_" + sanitize_var(name)
-    fields = [
-        {"key": "Name",       "value": name},
-        {"key": "Price",      "value": json.dumps({"amount": price, "currencyCode": "EUR"})},
-        {"key": "Weight",     "value": json.dumps({"value": 0, "unit": "GRAMS"})},
-        {"key": "Option ID",  "value": OPTION_IDS["Packaging"]},
-        {"key": "Packaging",  "value": internal},
-    ]
-    entries.append((var, fields))
+# Write universal GraphQL mutation
+graphql = '''
+mutation CreateMetaobject($input: MetaobjectCreateInput!) {
+  metaobjectCreate(metaobject: $input) {
+    metaobject { id displayName }
+    userErrors { field message }
+  }
+}
+'''.strip()
+with open(gql_filename, 'w') as f:
+    f.write(graphql + "\n")
+print(f"Wrote universal mutation ➞ {gql_filename}")
 
-# === Build GraphQL mutation text ===
-var_defs     = []
-mutation_ops = []
-variables    = {}
-
-for var_name, fields in entries:
-    var_defs.append(f"${var_name}: MetaobjectCreateInput!")
-    mutation_ops.append(
-        f"  {var_name}: metaobjectCreate(metaobject: ${var_name}) {{\n"
-        f"    metaobject {{ id }}\n"
-        f"    userErrors {{ field message }}\n"
-        f"  }}"
-    )
-    # prepare the variables JSON
-    variables[var_name] = {
-        "type":   METAOBJECT_TYPE,
-        "fields": fields
-    }
-
-graphql_query = (
-    "mutation BulkCreateConfigurationValues(\n"
-    + ",\n".join(var_defs)
-    + "\n) {\n"
-    + "\n".join(mutation_ops)
-    + "\n}\n"
-)
-
-# === Write out files ===
-with open("bulk_create_configuration_values.graphql", "w") as f:
-    f.write(graphql_query)
-
-with open("bulk_create_configuration_values.json", "w") as f:
-    json.dump(variables, f, indent=2)
-
-print("✅ Wrote:")
-print("   • bulk_create_configuration_values.graphql")
-print("   • bulk_create_configuration_values.json")
+# Generate per-entry variable JSON files
+entries = build_entries()
+for e in entries:
+    path = os.path.join(var_dir, f"{e['handle']}.json")
+    with open(path, 'w') as f:
+        json.dump({"input": e['input']}, f, indent=2)
+    print(f"Written variables ➞ {path}")
+print(f"Done: {len(entries)} files in '{var_dir}/'")

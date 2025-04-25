@@ -1,0 +1,24 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "textile-bag",
+    "fields": [
+      {
+        "key": "name",
+        "value": "Textile Bag"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"1.20\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660967769"
+      },
+      {
+        "key": "packaging",
+        "value": "textile-bag"
+      }
+    ]
+  }
+}

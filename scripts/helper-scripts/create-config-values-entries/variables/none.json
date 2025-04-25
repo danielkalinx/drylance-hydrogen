@@ -1,0 +1,24 @@
+{
+  "input": {
+    "type": "configuration_value",
+    "handle": "none",
+    "fields": [
+      {
+        "key": "name",
+        "value": "No Bag"
+      },
+      {
+        "key": "price",
+        "value": "{\"amount\": \"0.00\", \"currency_code\": \"EUR\"}"
+      },
+      {
+        "key": "option_id",
+        "value": "gid://shopify/Metaobject/344660967769"
+      },
+      {
+        "key": "packaging",
+        "value": "none"
+      }
+    ]
+  }
+}

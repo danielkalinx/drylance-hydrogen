@@ -1,0 +1,116 @@
+{
+  "data": {
+    "metaobjectDefinition": {
+      "metaobjects": {
+        "edges": [
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344660803929",
+              "displayName": "Printed Sides",
+              "type": "configuration_option"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344660902233",
+              "displayName": "Towel Size",
+              "type": "configuration_option"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344660935001",
+              "displayName": "Hangloop Position",
+              "type": "configuration_option"
+            }
+          },
+          {
+            "node": {
+              "id": "gid://shopify/Metaobject/344660967769",
+              "displayName": "Packaging",
+              "type": "configuration_option"
+            }
+          }
+        ],
+        "nodes": [
+          {
+            "fields": [
+              {
+                "jsonValue": "Printed Sides",
+                "value": "Printed Sides",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": "gid://shopify/Product/15391530385753",
+                "value": "gid://shopify/Product/15391530385753",
+                "type": "product_reference",
+                "key": "product_id"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Towel Size",
+                "value": "Towel Size",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": "gid://shopify/Product/15391530385753",
+                "value": "gid://shopify/Product/15391530385753",
+                "type": "product_reference",
+                "key": "product_id"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Hangloop Position",
+                "value": "Hangloop Position",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": "gid://shopify/Product/15391530385753",
+                "value": "gid://shopify/Product/15391530385753",
+                "type": "product_reference",
+                "key": "product_id"
+              }
+            ]
+          },
+          {
+            "fields": [
+              {
+                "jsonValue": "Packaging",
+                "value": "Packaging",
+                "type": "single_line_text_field",
+                "key": "name"
+              },
+              {
+                "jsonValue": "gid://shopify/Product/15391530385753",
+                "value": "gid://shopify/Product/15391530385753",
+                "type": "product_reference",
+                "key": "product_id"
+              }
+            ]
+          }
+        ]
+      },
+      "type": "configuration_option"
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 15,
+      "actualQueryCost": 9,
+      "throttleStatus": {
+        "maximumAvailable": 2000,
+        "currentlyAvailable": 1991,
+        "restoreRate": 100
+      }
+    }
+  }
+}
