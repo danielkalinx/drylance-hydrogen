@@ -1,0 +1,42 @@
+{
+  "data": {
+    "productVariantByIdentifier": {
+      "id": "gid://shopify/ProductVariant/54499304210777",
+      "displayName": "Customizable Microfiber Towel - 40 × 80 cm | Both sides | Hangloop | Mesh Bag",
+      "title": "40 × 80 cm | Both sides | Hangloop | Mesh Bag",
+      "taxable": true,
+      "price": "6.60",
+      "metafields": {
+        "edges": [
+          {
+            "node": {
+              "type": "weight",
+              "key": "metadata_weight",
+              "id": "gid://shopify/Metafield/179189887172953",
+              "value": "{\"value\":120.0,\"unit\":\"GRAMS\"}"
+            }
+          },
+          {
+            "node": {
+              "type": "list.metaobject_reference",
+              "key": "configuration_value_ids",
+              "id": "gid://shopify/Metafield/179189898903897",
+              "value": "[\"gid://shopify/Metaobject/344688984409\",\"gid://shopify/Metaobject/344688820569\",\"gid://shopify/Metaobject/344688787801\",\"gid://shopify/Metaobject/344688492889\",\"gid://shopify/Metaobject/344688460121\",\"gid://shopify/Metaobject/344688427353\",\"gid://shopify/Metaobject/344688558425\",\"gid://shopify/Metaobject/344688722265\",\"gid://shopify/Metaobject/344688132441\",\"gid://shopify/Metaobject/344688394585\",\"gid://shopify/Metaobject/344688591193\"]"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 7,
+      "actualQueryCost": 4,
+      "throttleStatus": {
+        "maximumAvailable": 2000,
+        "currentlyAvailable": 1996,
+        "restoreRate": 100
+      }
+    }
+  }
+}

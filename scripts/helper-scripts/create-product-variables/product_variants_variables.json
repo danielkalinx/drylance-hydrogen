@@ -1,0 +1,773 @@
+{
+  "productId": "gid://shopify/Product/15391530385753",
+  "variants": [
+    {
+      "price": 6.4,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.4,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.4,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "title": "40 \u00d7 80 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.2,
+      "title": "40 \u00d7 80 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 6.4,
+      "title": "40 \u00d7 80 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 120, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "title": "40 \u00d7 100 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 6.6,
+      "title": "40 \u00d7 100 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 6.8,
+      "title": "40 \u00d7 100 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 160, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.4,
+      "title": "50 \u00d7 100 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 7.0,
+      "title": "50 \u00d7 100 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 7.2,
+      "title": "50 \u00d7 100 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 200, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 10.8,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 11.0,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 10.8,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 11.0,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 10.8,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 11.0,
+      "title": "75 \u00d7 135 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 10.6,
+      "title": "75 \u00d7 135 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 10.8,
+      "title": "75 \u00d7 135 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 300, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "title": "80 \u00d7 160 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 13.6,
+      "title": "80 \u00d7 160 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 13.8,
+      "title": "80 \u00d7 160 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Center | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Center | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688427353\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Left | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Left | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688460121\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Right | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.4,
+      "title": "80 \u00d7 180 cm | Both sides | Bottom Right | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[\"gid://shopify/Metaobject/344688492889\"]"
+        }
+      ]
+    },
+    {
+      "price": 14.0,
+      "title": "80 \u00d7 180 cm | Both sides | No Hangloop | No Packaging",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    },
+    {
+      "price": 14.2,
+      "title": "80 \u00d7 180 cm | Both sides | No Hangloop | Mesh Bag",
+      "metafields": [
+        {
+          "key": "metadata_weight",
+          "type": "weight",
+          "value": "{\"value\": 470, \"unit\": \"GRAMS\"}"
+        },
+        {
+          "key": "configuration_value_ids",
+          "type": "list.metaobject_reference",
+          "value": "[]"
+        }
+      ]
+    }
+  ]
+}
