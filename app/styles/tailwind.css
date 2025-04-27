@@ -130,14 +130,6 @@
   2. Theme Variables
   */
 
-  /* Border Radius */
-  --radius-sm: rounded-lg;
-  --radius-default: rounded-xl;
-  --radius-md: rounded-2xl;
-  --radius-lg: rounded-3xl;
-  --radius-xl: rounded-4xl;
-  --radius-full: rounded-full;
-
   /* Fonts */
   --font-sans: 'poppins', sans-serif;
   --font-display: 'area-variable', sans-serif;
