@@ -1,5 +1,5 @@
 import {Suspense} from 'react';
-import {Await, NavLink, useAsyncValue} from '@remix-run/react';
+import {Await, NavLink, useAsyncValue, useLocation} from '@remix-run/react';
 import {
   type CartViewPayload,
   useAnalytics,
@@ -7,6 +7,11 @@ import {
 } from '@shopify/hydrogen';
 import type {HeaderQuery, CartApiQueryFragment} from 'storefrontapi.generated';
 import {useAside} from '~/components/Aside';
+import {Button} from '~/components/ui/button';
+import {useMediaQuery} from '~/utils/useMediaQuery';
+import {Drawer, DrawerTrigger, DrawerContent} from '~/components/ui/drawer';
+import {Sheet, SheetTrigger, SheetContent} from '~/components/ui/sheet';
+import {useEffect, useState} from 'react';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -99,8 +104,48 @@ function HeaderCtas({
   isLoggedIn,
   cart,
 }: Pick<HeaderProps, 'isLoggedIn' | 'cart'>) {
+  const isMdUp = useMediaQuery('(min-width: 768px)'); // Tailwind's md breakpoint
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  // Close modal on route change
+  useEffect(() => {
+    setOpen(false);
+  }, [location]);
+
   return (
     <nav className="header-ctas" role="navigation">
+      {isMdUp ? (
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger asChild>
+            <Button variant="secondary">Configure Towel</Button>
+          </SheetTrigger>
+          <SheetContent side="right">
+            <div style={{padding: 24}}>Product Studio (Sheet)</div>
+            <NavLink
+              to="/studio/microfiber-towel"
+              onClick={() => setOpen(false)}
+            >
+              <Button className="mt-4 w-full">Go to Studio</Button>
+            </NavLink>
+          </SheetContent>
+        </Sheet>
+      ) : (
+        <Drawer open={open} onOpenChange={setOpen}>
+          <DrawerTrigger asChild>
+            <Button variant="secondary">Configure Towel</Button>
+          </DrawerTrigger>
+          <DrawerContent>
+            <div style={{padding: 24}}>Product Studio (Drawer)</div>
+            <NavLink
+              to="/studio/microfiber-towel"
+              onClick={() => setOpen(false)}
+            >
+              <Button className="mt-4 w-full">Go to Studio</Button>
+            </NavLink>
+          </DrawerContent>
+        </Drawer>
+      )}
       <HeaderMenuMobileToggle />
       <NavLink prefetch="intent" to="/account" style={activeLinkStyle}>
         <Suspense fallback="Sign in">
