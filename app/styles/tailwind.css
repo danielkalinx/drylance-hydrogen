@@ -252,7 +252,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply font-sans bg-background text-foreground;
+    @apply font-sans bg-background text-foreground font-light;
   }
 
   h1 {
@@ -272,7 +272,7 @@
   }
 
   p {
-    @apply text-base leading-7 font-normal tracking-normal;
+    @apply text-base leading-7 font-light tracking-normal;
   }
 
   blockquote {

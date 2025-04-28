@@ -58,7 +58,7 @@ export default function Studio() {
             {sizes.map((size) => (
               <label
                 key={size.id}
-                className={`flex items-center gap-3 p-4 rounded-xl border cursor-pointer ${
+                className={`flex items-center gap-3 p-4 rounded-3xl border cursor-pointer ${
                   selectedSize === size.id
                     ? 'bg-accent border-primary'
                     : 'hover:bg-accent/50'
