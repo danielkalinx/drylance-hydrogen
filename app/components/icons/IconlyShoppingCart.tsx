@@ -5,7 +5,7 @@ type IconlyIconProps = {
 
 export const IconlyShoppingCart = ({
   size = 24,
-  color = '#000000',
+  color = 'currentColor',
 }: IconlyIconProps) => {
   return (
     <svg

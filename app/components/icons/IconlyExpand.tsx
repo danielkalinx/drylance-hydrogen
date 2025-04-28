@@ -5,7 +5,7 @@ type IconlyIconProps = {
 
 export const IconlyExpand = ({
   size = 24,
-  color = '#000000',
+  color = 'currentColor',
 }: IconlyIconProps) => {
   return (
     <svg

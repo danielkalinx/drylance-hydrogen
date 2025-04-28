@@ -5,7 +5,7 @@ type IconlyIconProps = {
 
 export const IconlyLeftLine = ({
   size = 24,
-  color = '#000000',
+  color = 'currentColor',
 }: IconlyIconProps) => {
   return (
     <svg

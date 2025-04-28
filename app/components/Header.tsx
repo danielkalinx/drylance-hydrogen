@@ -14,6 +14,7 @@ import {Sheet, SheetTrigger, SheetContent} from '~/components/ui/sheet';
 import {useEffect, useState} from 'react';
 import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
+import {ArrowRight} from '~/components/icons/ArrowRight';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -115,46 +116,57 @@ function HeaderCtas({
     setOpen(false);
   }, [location]);
 
+  // Unified button click handler
+  const handleOpen = () => setOpen(true);
+
+  // Hide button on /studio routes
+  const isStudioRoute = location.pathname.startsWith('/studio');
+
   return (
     <nav
       className="header-ctas"
       role="navigation"
       style={{display: 'flex', alignItems: 'center', gap: 8}}
     >
-      {isMdUp ? (
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild>
-            <Button size="sm" variant="secondary">
+      {!isStudioRoute && (
+        <>
+          <Button size="sm" variant="secondary" onClick={handleOpen}>
+            <span className="flex items-center gap-2">
               Configure Towel
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <div style={{padding: 24}}>Product Studio (Sheet)</div>
-            <NavLink
-              to="/studio/microfiber-towel"
-              onClick={() => setOpen(false)}
-            >
-              <Button className="mt-4 w-full">Go to Studio</Button>
-            </NavLink>
-          </SheetContent>
-        </Sheet>
-      ) : (
-        <Drawer open={open} onOpenChange={setOpen}>
-          <DrawerTrigger asChild>
-            <Button size="sm" variant="secondary">
-              Configure Towel
-            </Button>
-          </DrawerTrigger>
-          <DrawerContent>
-            <div style={{padding: 24}}>Product Studio (Drawer)</div>
-            <NavLink
-              to="/studio/microfiber-towel"
-              onClick={() => setOpen(false)}
-            >
-              <Button className="mt-4 w-full">Go to Studio</Button>
-            </NavLink>
-          </DrawerContent>
-        </Drawer>
+              <span
+                className="bg-primary text-primary-foreground rounded-full flex items-center justify-center"
+                style={{width: 32, height: 32}}
+              >
+                <ArrowRight />
+              </span>
+            </span>
+          </Button>
+          {isMdUp ? (
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetContent side="right">
+                <div style={{padding: 24}}>Product Studio (Sheet)</div>
+                <NavLink
+                  to="/studio/microfiber-towel"
+                  onClick={() => setOpen(false)}
+                >
+                  <Button className="mt-4 w-full">Go to Studio</Button>
+                </NavLink>
+              </SheetContent>
+            </Sheet>
+          ) : (
+            <Drawer open={open} onOpenChange={setOpen}>
+              <DrawerContent>
+                <div style={{padding: 24}}>Product Studio (Drawer)</div>
+                <NavLink
+                  to="/studio/microfiber-towel"
+                  onClick={() => setOpen(false)}
+                >
+                  <Button className="mt-4 w-full">Go to Studio</Button>
+                </NavLink>
+              </DrawerContent>
+            </Drawer>
+          )}
+        </>
       )}
       <HeaderMenuMobileToggle />
       <NavLink

@@ -3,7 +3,10 @@ type IconlyIconProps = {
   color?: string;
 };
 
-export const Iconlyuser = ({size = 24, color = '#000000'}: IconlyIconProps) => {
+export const Iconlyuser = ({
+  size = 24,
+  color = 'currentColor',
+}: IconlyIconProps) => {
   return (
     <svg
       width={size}
