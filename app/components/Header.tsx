@@ -12,6 +12,8 @@ import {useMediaQuery} from '~/utils/useMediaQuery';
 import {Drawer, DrawerTrigger, DrawerContent} from '~/components/ui/drawer';
 import {Sheet, SheetTrigger, SheetContent} from '~/components/ui/sheet';
 import {useEffect, useState} from 'react';
+import {Iconlyuser} from '~/components/icons/Iconlyuser';
+import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -114,11 +116,17 @@ function HeaderCtas({
   }, [location]);
 
   return (
-    <nav className="header-ctas" role="navigation">
+    <nav
+      className="header-ctas"
+      role="navigation"
+      style={{display: 'flex', alignItems: 'center', gap: 8}}
+    >
       {isMdUp ? (
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
-            <Button variant="secondary">Configure Towel</Button>
+            <Button size="sm" variant="secondary">
+              Configure Towel
+            </Button>
           </SheetTrigger>
           <SheetContent side="right">
             <div style={{padding: 24}}>Product Studio (Sheet)</div>
@@ -133,7 +141,9 @@ function HeaderCtas({
       ) : (
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerTrigger asChild>
-            <Button variant="secondary">Configure Towel</Button>
+            <Button size="sm" variant="secondary">
+              Configure Towel
+            </Button>
           </DrawerTrigger>
           <DrawerContent>
             <div style={{padding: 24}}>Product Studio (Drawer)</div>
@@ -147,14 +157,18 @@ function HeaderCtas({
         </Drawer>
       )}
       <HeaderMenuMobileToggle />
-      <NavLink prefetch="intent" to="/account" style={activeLinkStyle}>
-        <Suspense fallback="Sign in">
-          <Await resolve={isLoggedIn} errorElement="Sign in">
-            {(isLoggedIn) => (isLoggedIn ? 'Account' : 'Sign in')}
-          </Await>
-        </Suspense>
+      <NavLink
+        prefetch="intent"
+        to="/account"
+        aria-label="Account"
+        style={{padding: 0, display: 'flex', alignItems: 'center'}}
+      >
+        <Button variant="outline" size="sm" asChild>
+          <span>
+            <Iconlyuser size={24} />
+          </span>
+        </Button>
       </NavLink>
-      <SearchToggle />
       <CartToggle cart={cart} />
     </nav>
   );
@@ -172,22 +186,22 @@ function HeaderMenuMobileToggle() {
   );
 }
 
-function SearchToggle() {
-  const {open} = useAside();
-  return (
-    <button className="reset" onClick={() => open('search')}>
-      Search
-    </button>
-  );
-}
-
 function CartBadge({count}: {count: number | null}) {
   const {open} = useAside();
   const {publish, shop, cart, prevCart} = useAnalytics();
 
   return (
-    <a
-      href="/cart"
+    <Button
+      type="button"
+      variant="outline"
+      size="sm"
+      aria-label="Cart"
+      style={{
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
       onClick={(e) => {
         e.preventDefault();
         open('cart');
@@ -199,8 +213,31 @@ function CartBadge({count}: {count: number | null}) {
         } as CartViewPayload);
       }}
     >
-      Cart {count === null ? <span>&nbsp;</span> : count}
-    </a>
+      <IconlyShoppingCart size={24} />
+      {count !== null && count > 0 && (
+        <span
+          style={{
+            position: 'absolute',
+            top: 6,
+            right: 6,
+            background: '#d00',
+            color: '#fff',
+            borderRadius: '50%',
+            fontSize: 10,
+            minWidth: 16,
+            height: 16,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontWeight: 'bold',
+            padding: '0 4px',
+            lineHeight: 1,
+          }}
+        >
+          {count}
+        </span>
+      )}
+    </Button>
   );
 }
 
