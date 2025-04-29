@@ -1,11 +1,11 @@
-import {useState, useMemo} from 'react';
+import {useState, useMemo, useEffect} from 'react';
 import {Button} from '~/components/ui/button';
 import {Badge} from '~/components/ui/badge';
 import {RadioGroup, RadioGroupItem} from '~/components/ui/radio-group';
 import {IconlyExpand} from '~/components/icons/IconlyExpand';
 import {IconlyLeftLine} from '~/components/icons/IconlyLeftLine';
 import {type LoaderFunctionArgs} from '@shopify/remix-oxygen';
-import {useLoaderData} from '@remix-run/react';
+import {useLoaderData, useSearchParams} from '@remix-run/react';
 import {Tabs, TabsList, TabsTrigger, TabsContent} from '~/components/ui/tabs';
 
 export async function loader({context}: LoaderFunctionArgs) {
@@ -19,17 +19,21 @@ export async function loader({context}: LoaderFunctionArgs) {
 }
 
 const CONFIGURATION_VALUES_QUERY = `#graphql
-  query GetConfigValues {
-    metaobjects(
-      first: 100,
-      type: "configuration_value"
-    ) {
+  query getConfigurationOptions {
+    metaobjects(first: 100, type: "configuration_value") {
       edges {
         node {
           handle
           fields {
             key
             value
+          }
+          field(key: "option_id") {
+            reference {
+              ... on Metaobject {
+                handle
+              }
+            }
           }
         }
       }
@@ -39,22 +43,20 @@ const CONFIGURATION_VALUES_QUERY = `#graphql
 
 export default function Studio() {
   const {configurationValues} = useLoaderData<typeof loader>();
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  // Group configuration values by option_id
+  // Group configuration values by option handle
   const optionGroups = useMemo(() => {
     const groups: Record<string, any[]> = {};
 
     configurationValues.forEach((value: any) => {
-      // Find option_id field
-      const optionIdField = value.fields.find(
-        (field: any) => field.key === 'option_id',
-      );
-      if (!optionIdField) return;
+      // Get the option reference handle
+      const optionReference = value.field?.reference?.handle;
 
-      const optionId = optionIdField.value;
+      if (!optionReference) return;
 
-      if (!groups[optionId]) {
-        groups[optionId] = [];
+      if (!groups[optionReference]) {
+        groups[optionReference] = [];
       }
 
       // Parse fields into a more usable format
@@ -69,7 +71,7 @@ export default function Studio() {
         ),
       };
 
-      groups[optionId].push(parsedValue);
+      groups[optionReference].push(parsedValue);
     });
 
     return groups;
@@ -78,7 +80,40 @@ export default function Studio() {
   // State for selected options
   const [selectedOptions, setSelectedOptions] = useState<
     Record<string, string>
-  >({});
+  >(() => {
+    // Initialize state from URL params
+    const initialOptions: Record<string, string> = {};
+
+    // Collect all option values from URL
+    optionGroups &&
+      Object.keys(optionGroups).forEach((optionHandle) => {
+        const paramValue = searchParams.get(optionHandle);
+        if (paramValue) {
+          initialOptions[optionHandle] = paramValue;
+        }
+      });
+
+    return initialOptions;
+  });
+
+  // Update URL when selections change
+  useEffect(() => {
+    const newParams = new URLSearchParams(searchParams);
+
+    // Update params with current selections
+    Object.entries(selectedOptions).forEach(([optionHandle, value]) => {
+      newParams.set(optionHandle, value);
+    });
+
+    // Remove params that are no longer selected
+    Object.keys(optionGroups).forEach((optionHandle) => {
+      if (!selectedOptions[optionHandle]) {
+        newParams.delete(optionHandle);
+      }
+    });
+
+    setSearchParams(newParams, {replace: true});
+  }, [selectedOptions, setSearchParams, optionGroups, searchParams]);
 
   // Define option groups based on option keys found in data
   const optionKeys = useMemo(() => Object.keys(optionGroups), [optionGroups]);
@@ -97,30 +132,33 @@ export default function Studio() {
   };
 
   // Get name for option group display
-  const getOptionGroupName = (optionId: string) => {
-    // Extract last segment from gid
-    const segments = optionId.split('/');
-    const id = segments[segments.length - 1];
-
+  const getOptionGroupName = (optionHandle: string) => {
     // Map to human-readable names
     const names: Record<string, string> = {
-      '344660902233': 'Size',
-      '344660803929': 'Print Sides',
-      '344660935001': 'Hangloop',
-      '344660967769': 'Packaging',
+      'towel-size': 'Size',
+      'printed-sides': 'Print Sides',
+      'hangloop-position': 'Hangloop',
+      packaging: 'Packaging',
     };
 
-    return names[id] || 'Option';
+    return names[optionHandle] || optionHandle.replace(/-/g, ' ');
   };
 
-  // Default tab
-  const [activeTab, setActiveTab] = useState(optionKeys[0] || '');
+  // Default tab - use first selected option or first available option
+  const [activeTab, setActiveTab] = useState(() => {
+    // Try to find a tab with a selection
+    for (const key of optionKeys) {
+      if (selectedOptions[key]) {
+        return key;
+      }
+    }
+    // Default to first tab if no selection
+    return optionKeys[0] || '';
+  });
 
   // Check if an option is for hangloop
-  const isHangloopOption = (optionId: string) => {
-    const segments = optionId.split('/');
-    const id = segments[segments.length - 1];
-    return id === '344660935001'; // Hangloop ID
+  const isHangloopOption = (optionHandle: string) => {
+    return optionHandle === 'hangloop-position';
   };
 
   return (
@@ -162,39 +200,39 @@ export default function Studio() {
             className="space-y-6"
           >
             <TabsList className="w-full">
-              {optionKeys.map((optionId) => (
-                <TabsTrigger key={optionId} value={optionId}>
-                  {getOptionGroupName(optionId)}
+              {optionKeys.map((optionHandle) => (
+                <TabsTrigger key={optionHandle} value={optionHandle}>
+                  {getOptionGroupName(optionHandle)}
                 </TabsTrigger>
               ))}
             </TabsList>
 
-            {optionKeys.map((optionId) => (
+            {optionKeys.map((optionHandle) => (
               <TabsContent
-                key={optionId}
-                value={optionId}
+                key={optionHandle}
+                value={optionHandle}
                 className="space-y-4"
               >
                 <h2 className="text-lg font-medium">
-                  {getOptionGroupName(optionId)}
+                  {getOptionGroupName(optionHandle)}
                 </h2>
 
-                {isHangloopOption(optionId) ? (
+                {isHangloopOption(optionHandle) ? (
                   <RadioGroup
-                    value={selectedOptions[optionId] || ''}
+                    value={selectedOptions[optionHandle] || ''}
                     onValueChange={(value) => {
                       setSelectedOptions((prev) => ({
                         ...prev,
-                        [optionId]: value,
+                        [optionHandle]: value,
                       }));
                     }}
                     className="grid grid-cols-3 gap-3"
                   >
-                    {optionGroups[optionId].map((option) => (
+                    {optionGroups[optionHandle].map((option) => (
                       <label
                         key={option.handle}
                         className={`flex flex-col items-center gap-2 p-3 rounded-xl border cursor-pointer ${
-                          selectedOptions[optionId] === option.handle
+                          selectedOptions[optionHandle] === option.handle
                             ? 'bg-accent border-primary'
                             : 'hover:bg-accent/50'
                         }`}
@@ -207,7 +245,7 @@ export default function Studio() {
                         </div>
                         <span
                           className={`text-center text-sm font-medium ${
-                            selectedOptions[optionId] === option.handle
+                            selectedOptions[optionHandle] === option.handle
                               ? 'text-primary'
                               : 'text-muted-foreground'
                           }`}
@@ -217,7 +255,7 @@ export default function Studio() {
                         <Badge
                           variant="outline"
                           className={
-                            selectedOptions[optionId] === option.handle
+                            selectedOptions[optionHandle] === option.handle
                               ? 'border-primary text-primary'
                               : 'text-muted-foreground'
                           }
@@ -229,20 +267,20 @@ export default function Studio() {
                   </RadioGroup>
                 ) : (
                   <RadioGroup
-                    value={selectedOptions[optionId] || ''}
+                    value={selectedOptions[optionHandle] || ''}
                     onValueChange={(value) => {
                       setSelectedOptions((prev) => ({
                         ...prev,
-                        [optionId]: value,
+                        [optionHandle]: value,
                       }));
                     }}
                     className="space-y-3"
                   >
-                    {optionGroups[optionId].map((option) => (
+                    {optionGroups[optionHandle].map((option) => (
                       <label
                         key={option.handle}
                         className={`flex items-center gap-3 p-4 rounded-3xl border cursor-pointer ${
-                          selectedOptions[optionId] === option.handle
+                          selectedOptions[optionHandle] === option.handle
                             ? 'bg-accent border-primary'
                             : 'hover:bg-accent/50'
                         }`}
@@ -254,7 +292,7 @@ export default function Studio() {
                         <div className="w-16 h-16 bg-background rounded" />
                         <span
                           className={`flex-1 text-sm font-medium ${
-                            selectedOptions[optionId] === option.handle
+                            selectedOptions[optionHandle] === option.handle
                               ? 'text-primary'
                               : 'text-muted-foreground'
                           }`}
@@ -264,7 +302,7 @@ export default function Studio() {
                         <Badge
                           variant="outline"
                           className={
-                            selectedOptions[optionId] === option.handle
+                            selectedOptions[optionHandle] === option.handle
                               ? 'border-primary text-primary'
                               : 'text-muted-foreground'
                           }
