@@ -2,11 +2,11 @@ import {useState, useMemo} from 'react';
 import {Button} from '~/components/ui/button';
 import {Badge} from '~/components/ui/badge';
 import {RadioGroup, RadioGroupItem} from '~/components/ui/radio-group';
-import {Tabs, TabsList, TabsTrigger, TabsContent} from '~/components/ui/tabs';
 import {IconlyExpand} from '~/components/icons/IconlyExpand';
 import {IconlyLeftLine} from '~/components/icons/IconlyLeftLine';
 import {type LoaderFunctionArgs} from '@shopify/remix-oxygen';
 import {useLoaderData} from '@remix-run/react';
+import {Tabs, TabsList, TabsTrigger, TabsContent} from '~/components/ui/tabs';
 
 export async function loader({context}: LoaderFunctionArgs) {
   const {storefront} = context;
@@ -80,8 +80,8 @@ export default function Studio() {
     Record<string, string>
   >({});
 
-  // Define tab keys based on option keys found in data
-  const tabKeys = useMemo(() => Object.keys(optionGroups), [optionGroups]);
+  // Define option groups based on option keys found in data
+  const optionKeys = useMemo(() => Object.keys(optionGroups), [optionGroups]);
 
   // Helper function to parse price JSON
   const formatPrice = (priceJson: string) => {
@@ -96,8 +96,8 @@ export default function Studio() {
     }
   };
 
-  // Get name for tab display
-  const getTabName = (optionId: string) => {
+  // Get name for option group display
+  const getOptionGroupName = (optionId: string) => {
     // Extract last segment from gid
     const segments = optionId.split('/');
     const id = segments[segments.length - 1];
@@ -113,6 +113,16 @@ export default function Studio() {
     return names[id] || 'Option';
   };
 
+  // Default tab
+  const [activeTab, setActiveTab] = useState(optionKeys[0] || '');
+
+  // Check if an option is for hangloop
+  const isHangloopOption = (optionId: string) => {
+    const segments = optionId.split('/');
+    const id = segments[segments.length - 1];
+    return id === '344660935001'; // Hangloop ID
+  };
+
   return (
     <section className="py-24 space-y-6">
       <div className="container flex items-start justify-center gap-16 px-6">
@@ -126,7 +136,7 @@ export default function Studio() {
           </Button>
         </div>
 
-        <div className="max-w-md space-y-6">
+        <div className="max-w-md space-y-8">
           <div className="space-y-4">
             <h1 className="text-[36px] leading-10 font-normal tracking-[-1.7px] text-card-foreground md:text-4xl">
               Design Your Microfiber Towel
@@ -146,63 +156,125 @@ export default function Studio() {
             </div>
           </div>
 
-          <Tabs defaultValue={tabKeys[0]} className="w-full">
+          <Tabs
+            value={activeTab}
+            onValueChange={setActiveTab}
+            className="space-y-6"
+          >
             <TabsList className="w-full">
-              {tabKeys.map((optionId) => (
+              {optionKeys.map((optionId) => (
                 <TabsTrigger key={optionId} value={optionId}>
-                  {getTabName(optionId)}
+                  {getOptionGroupName(optionId)}
                 </TabsTrigger>
               ))}
             </TabsList>
 
-            {tabKeys.map((optionId) => (
-              <TabsContent key={optionId} value={optionId} className="mt-4">
-                <RadioGroup
-                  value={selectedOptions[optionId] || ''}
-                  onValueChange={(value) => {
-                    setSelectedOptions((prev) => ({
-                      ...prev,
-                      [optionId]: value,
-                    }));
-                  }}
-                  className="space-y-3"
-                >
-                  {optionGroups[optionId].map((option) => (
-                    <label
-                      key={option.handle}
-                      className={`flex items-center gap-3 p-4 rounded-3xl border cursor-pointer ${
-                        selectedOptions[optionId] === option.handle
-                          ? 'bg-accent border-primary'
-                          : 'hover:bg-accent/50'
-                      }`}
-                    >
-                      <RadioGroupItem
-                        value={option.handle}
-                        id={option.handle}
-                      />
-                      <div className="w-16 h-16 bg-background rounded" />
-                      <span
-                        className={`flex-1 text-sm font-medium ${
+            {optionKeys.map((optionId) => (
+              <TabsContent
+                key={optionId}
+                value={optionId}
+                className="space-y-4"
+              >
+                <h2 className="text-lg font-medium">
+                  {getOptionGroupName(optionId)}
+                </h2>
+
+                {isHangloopOption(optionId) ? (
+                  <RadioGroup
+                    value={selectedOptions[optionId] || ''}
+                    onValueChange={(value) => {
+                      setSelectedOptions((prev) => ({
+                        ...prev,
+                        [optionId]: value,
+                      }));
+                    }}
+                    className="grid grid-cols-3 gap-3"
+                  >
+                    {optionGroups[optionId].map((option) => (
+                      <label
+                        key={option.handle}
+                        className={`flex flex-col items-center gap-2 p-3 rounded-xl border cursor-pointer ${
                           selectedOptions[optionId] === option.handle
-                            ? 'text-primary'
-                            : 'text-muted-foreground'
+                            ? 'bg-accent border-primary'
+                            : 'hover:bg-accent/50'
                         }`}
                       >
-                        {option.name}
-                      </span>
-                      <Badge
-                        variant="outline"
-                        className={
+                        <div className="w-16 h-16 bg-background rounded flex items-center justify-center">
+                          <RadioGroupItem
+                            value={option.handle}
+                            id={option.handle}
+                          />
+                        </div>
+                        <span
+                          className={`text-center text-sm font-medium ${
+                            selectedOptions[optionId] === option.handle
+                              ? 'text-primary'
+                              : 'text-muted-foreground'
+                          }`}
+                        >
+                          {option.name}
+                        </span>
+                        <Badge
+                          variant="outline"
+                          className={
+                            selectedOptions[optionId] === option.handle
+                              ? 'border-primary text-primary'
+                              : 'text-muted-foreground'
+                          }
+                        >
+                          {formatPrice(option.price)}
+                        </Badge>
+                      </label>
+                    ))}
+                  </RadioGroup>
+                ) : (
+                  <RadioGroup
+                    value={selectedOptions[optionId] || ''}
+                    onValueChange={(value) => {
+                      setSelectedOptions((prev) => ({
+                        ...prev,
+                        [optionId]: value,
+                      }));
+                    }}
+                    className="space-y-3"
+                  >
+                    {optionGroups[optionId].map((option) => (
+                      <label
+                        key={option.handle}
+                        className={`flex items-center gap-3 p-4 rounded-3xl border cursor-pointer ${
                           selectedOptions[optionId] === option.handle
-                            ? 'border-primary text-primary'
-                            : 'text-muted-foreground'
-                        }
+                            ? 'bg-accent border-primary'
+                            : 'hover:bg-accent/50'
+                        }`}
                       >
-                        {formatPrice(option.price)}
-                      </Badge>
-                    </label>
-                  ))}
-                </RadioGroup>
+                        <RadioGroupItem
+                          value={option.handle}
+                          id={option.handle}
+                        />
+                        <div className="w-16 h-16 bg-background rounded" />
+                        <span
+                          className={`flex-1 text-sm font-medium ${
+                            selectedOptions[optionId] === option.handle
+                              ? 'text-primary'
+                              : 'text-muted-foreground'
+                          }`}
+                        >
+                          {option.name}
+                        </span>
+                        <Badge
+                          variant="outline"
+                          className={
+                            selectedOptions[optionId] === option.handle
+                              ? 'border-primary text-primary'
+                              : 'text-muted-foreground'
+                          }
+                        >
+                          {formatPrice(option.price)}
+                        </Badge>
+                      </label>
+                    ))}
+                  </RadioGroup>
+                )}
               </TabsContent>
             ))}
           </Tabs>
