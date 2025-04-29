@@ -1,12 +1,13 @@
-import {useState, useMemo, useEffect} from 'react';
+import {useState, useMemo, useEffect, useCallback} from 'react';
 import {Button} from '~/components/ui/button';
 import {Badge} from '~/components/ui/badge';
 import {RadioGroup, RadioGroupItem} from '~/components/ui/radio-group';
 import {IconlyExpand} from '~/components/icons/IconlyExpand';
-import {IconlyLeftLine} from '~/components/icons/IconlyLeftLine';
 import {type LoaderFunctionArgs} from '@shopify/remix-oxygen';
-import {useLoaderData, useSearchParams} from '@remix-run/react';
+import {useLoaderData, useSearchParams, useNavigate} from '@remix-run/react';
 import {Tabs, TabsList, TabsTrigger, TabsContent} from '~/components/ui/tabs';
+import {IconlyLink} from '~/components/ui/IconlyLink';
+import {IconlyArrowleftLG} from '~/components/ui/IconlyArrowleftLG';
 
 export async function loader({context}: LoaderFunctionArgs) {
   const {storefront} = context;
@@ -44,6 +45,8 @@ const CONFIGURATION_VALUES_QUERY = `#graphql
 export default function Studio() {
   const {configurationValues} = useLoaderData<typeof loader>();
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const [linkCopied, setLinkCopied] = useState(false);
 
   // Group configuration values by option handle
   const optionGroups = useMemo(() => {
@@ -77,46 +80,65 @@ export default function Studio() {
     return groups;
   }, [configurationValues]);
 
-  // State for selected options
+  // Define option groups based on option keys found in data
+  const optionKeys = useMemo(() => Object.keys(optionGroups), [optionGroups]);
+
+  // Initialize selected options from URL parameters
   const [selectedOptions, setSelectedOptions] = useState<
     Record<string, string>
   >(() => {
-    // Initialize state from URL params
     const initialOptions: Record<string, string> = {};
 
-    // Collect all option values from URL
-    optionGroups &&
-      Object.keys(optionGroups).forEach((optionHandle) => {
-        const paramValue = searchParams.get(optionHandle);
-        if (paramValue) {
-          initialOptions[optionHandle] = paramValue;
+    // Parse options from URL parameters
+    optionKeys.forEach((key) => {
+      const value = searchParams.get(key);
+      if (value) {
+        // Verify this is a valid option
+        const optionGroup = optionGroups[key] || [];
+        const isValidOption = optionGroup.some(
+          (option) => option.handle === value,
+        );
+        if (isValidOption) {
+          initialOptions[key] = value;
         }
-      });
+      }
+    });
 
     return initialOptions;
   });
 
-  // Update URL when selections change
-  useEffect(() => {
-    const newParams = new URLSearchParams(searchParams);
+  // Update URL silently without page reload
+  const updateUrl = useCallback(() => {
+    const newParams = new URLSearchParams();
 
-    // Update params with current selections
-    Object.entries(selectedOptions).forEach(([optionHandle, value]) => {
-      newParams.set(optionHandle, value);
-    });
-
-    // Remove params that are no longer selected
-    Object.keys(optionGroups).forEach((optionHandle) => {
-      if (!selectedOptions[optionHandle]) {
-        newParams.delete(optionHandle);
+    // Add selected options to URL
+    Object.entries(selectedOptions).forEach(([key, value]) => {
+      if (value) {
+        newParams.set(key, value);
       }
     });
 
-    setSearchParams(newParams, {replace: true});
-  }, [selectedOptions, setSearchParams, optionGroups, searchParams]);
+    // Update URL without navigating or reload
+    window.history.replaceState(null, '', `?${newParams.toString()}`);
+  }, [selectedOptions]);
 
-  // Define option groups based on option keys found in data
-  const optionKeys = useMemo(() => Object.keys(optionGroups), [optionGroups]);
+  // Debounced URL update
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      updateUrl();
+    }, 500); // Wait 500ms after changes stop before updating URL
+    return () => clearTimeout(timer);
+  }, [selectedOptions, updateUrl]);
+
+  // Copy the current URL to clipboard
+  const copyLinkToClipboard = () => {
+    // First update URL with current selections
+    updateUrl();
+    // Then copy to clipboard
+    navigator.clipboard.writeText(window.location.href);
+    setLinkCopied(true);
+    setTimeout(() => setLinkCopied(false), 2000);
+  };
 
   // Helper function to parse price JSON
   const formatPrice = (priceJson: string) => {
@@ -161,6 +183,14 @@ export default function Studio() {
     return optionHandle === 'hangloop-position';
   };
 
+  // Update selected options locally
+  const handleOptionChange = (optionHandle: string, value: string) => {
+    setSelectedOptions((prev) => ({
+      ...prev,
+      [optionHandle]: value,
+    }));
+  };
+
   return (
     <section className="py-24 space-y-6">
       <div className="container flex items-start justify-center gap-16 px-6">
@@ -176,9 +206,20 @@ export default function Studio() {
 
         <div className="max-w-md space-y-8">
           <div className="space-y-4">
-            <h1 className="text-[36px] leading-10 font-normal tracking-[-1.7px] text-card-foreground md:text-4xl">
-              Design Your Microfiber Towel
-            </h1>
+            <div className="flex items-center justify-between">
+              <h1 className="text-[36px] leading-10 font-normal tracking-[-1.7px] text-card-foreground md:text-4xl">
+                Design Your Microfiber Towel
+              </h1>
+              <Button
+                variant="outline"
+                size="sm"
+                className="gap-2"
+                onClick={copyLinkToClipboard}
+              >
+                <IconlyLink size={16} />
+                {linkCopied ? 'Copied!' : 'Share'}
+              </Button>
+            </div>
             <p className="text-sm text-muted-foreground">
               Customize your towel with the options below.
             </p>
@@ -220,12 +261,9 @@ export default function Studio() {
                 {isHangloopOption(optionHandle) ? (
                   <RadioGroup
                     value={selectedOptions[optionHandle] || ''}
-                    onValueChange={(value) => {
-                      setSelectedOptions((prev) => ({
-                        ...prev,
-                        [optionHandle]: value,
-                      }));
-                    }}
+                    onValueChange={(value) =>
+                      handleOptionChange(optionHandle, value)
+                    }
                     className="grid grid-cols-3 gap-3"
                   >
                     {optionGroups[optionHandle].map((option) => (
@@ -268,12 +306,9 @@ export default function Studio() {
                 ) : (
                   <RadioGroup
                     value={selectedOptions[optionHandle] || ''}
-                    onValueChange={(value) => {
-                      setSelectedOptions((prev) => ({
-                        ...prev,
-                        [optionHandle]: value,
-                      }));
-                    }}
+                    onValueChange={(value) =>
+                      handleOptionChange(optionHandle, value)
+                    }
                     className="space-y-3"
                   >
                     {optionGroups[optionHandle].map((option) => (
@@ -320,7 +355,7 @@ export default function Studio() {
           <div className="fixed bottom-0 left-0 right-0 bg-background/80 backdrop-blur-lg md:static md:bg-transparent md:backdrop-blur-none p-8">
             <div className="flex gap-4 max-w-md mx-auto">
               <Button variant="secondary" size="lg" className="rounded-full">
-                <IconlyLeftLine />
+                <IconlyArrowleftLG />
               </Button>
               <Button className="flex-1 rounded-full" size="lg">
                 Next Step
