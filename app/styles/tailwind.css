@@ -255,6 +255,12 @@
     @apply font-sans bg-background text-foreground font-light;
   }
 
+  /* Counteract Poppins placement issue */
+  a,
+  button {
+    @apply font-display;
+  }
+
   h1 {
     @apply font-display text-4xl leading-10 font-semibold tracking-tighter md:text-5xl;
   }
