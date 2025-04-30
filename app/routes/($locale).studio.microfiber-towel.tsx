@@ -308,7 +308,7 @@ export default function Studio() {
         <div className="max-w-md space-y-8">
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <h1 className="text-[36px] leading-10 font-normal tracking-[-1.7px] text-card-foreground md:text-4xl">
+              <h1 className="text-3xl leading-10 font-normal text-card-foreground md:text-4xl">
                 Design Your Microfiber Towel
               </h1>
               <Button

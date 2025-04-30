@@ -20,10 +20,8 @@ export function OptionStep({
       {options.map((option) => (
         <label
           key={option.handle}
-          className={`flex items-center gap-3 p-4 rounded-3xl border cursor-pointer ${
-            selectedValue === option.handle
-              ? 'bg-accent border-primary'
-              : 'hover:bg-accent/50'
+          className={`flex items-center gap-3 p-4 rounded-3xl  cursor-pointer ${
+            selectedValue === option.handle ? 'bg-accent' : 'hover:bg-accent/50'
           }`}
         >
           <RadioGroupItem value={option.handle} id={option.handle} />
@@ -41,7 +39,7 @@ export function OptionStep({
             variant="outline"
             className={
               selectedValue === option.handle
-                ? 'border-primary text-primary'
+                ? 'text-primary'
                 : 'text-muted-foreground'
             }
           >

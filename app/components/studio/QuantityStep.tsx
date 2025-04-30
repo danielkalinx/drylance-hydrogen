@@ -42,7 +42,7 @@ export function QuantityStep({
         </div>
       </div>
 
-      <Card className="w-full backdrop-blur-lg bg-background/40 border-border">
+      <Card className="w-full backdrop-blur-lg bg-background/40 border-none">
         <CardHeader className="gap-1.5">
           <h3 className="text-xl font-normal text-card-foreground">
             Custom Sample available
@@ -69,7 +69,7 @@ export function QuantityStep({
         </div>
       </Card>
 
-      <Card className="w-full backdrop-blur-lg bg-background/40 border-border">
+      <Card className="w-full backdrop-blur-lg bg-background/40 border-none">
         <CardHeader className="gap-1.5">
           <h3 className="text-xl font-normal text-card-foreground">
             Volume Discount
