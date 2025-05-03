@@ -46,7 +46,16 @@ export default defineConfig({
        * Include 'example-dep' in the array below.
        * @see https://vitejs.dev/config/dep-optimization-options
        */
-      include: ['lottie-web'],
+      include: [
+        'use-sync-external-store/shim/with-selector.js',
+        'prop-types',
+        'scheduler',
+        'react-reconciler',
+        'react-reconciler/constants',
+        'react-dom/client',
+        '@splinetool/r3f-spline',
+        'lottie-web',
+      ],
     },
   },
 });
