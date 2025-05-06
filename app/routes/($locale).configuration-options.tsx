@@ -28,7 +28,7 @@ export default function ConfigurationOptions() {
     <div>
       {configurationOptions.map((option: any) => (
         <div key={option.id}>
-          <p>ID: {option.id}</p>
+          3<p>ID: {option.id}</p>
           <p>Handle: {option.handle}</p>
           <div>
             <p>Fields:</p>
@@ -58,7 +58,7 @@ export default function ConfigurationOptions() {
 }
 
 const CONFIGURATION_OPTIONS_QUERY = `#graphql
-  query getConfigurationOptions {
+  query getConfigurationOptionsList {
     metaobjects(
       first: 50,
       type: "configuration_option"

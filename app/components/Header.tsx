@@ -15,6 +15,7 @@ import {useEffect, useState} from 'react';
 import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 import {ArrowRight} from '~/components/icons/ArrowRight';
+import Logo from '~/assets/logo/drylance-small.svg';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -35,7 +36,7 @@ export function Header({
   return (
     <header className="header">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>{shop.name}</strong>
+        <img src={Logo} alt="Drylance Logo" className="h-9 w-9" />
       </NavLink>
       <HeaderMenu
         menu={menu}
@@ -130,12 +131,16 @@ function HeaderCtas({
     >
       {!isStudioRoute && (
         <>
-          <Button size="sm" variant="secondary" onClick={handleOpen}>
+          <Button
+            size={isMdUp ? 'lg' : 'sm'}
+            variant="secondary"
+            onClick={handleOpen}
+          >
             <span className="flex items-center gap-2">
               Configure Towel
               <span
                 className="bg-primary text-primary-foreground rounded-full flex items-center justify-center"
-                style={{width: 32, height: 32}}
+                style={{width: isMdUp ? 40 : 32, height: isMdUp ? 40 : 32}}
               >
                 <ArrowRight />
               </span>

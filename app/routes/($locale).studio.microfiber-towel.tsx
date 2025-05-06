@@ -39,7 +39,7 @@ export async function loader({context}: LoaderFunctionArgs) {
 }
 
 const CONFIGURATION_VALUES_QUERY = `#graphql
-  query getConfigurationOptions {
+  query getConfigurationValues {
     metaobjects(first: 100, type: "configuration_value") {
       edges {
         node {
