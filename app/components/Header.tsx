@@ -16,6 +16,7 @@ import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 import Logo from '~/assets/logo/drylance-small.svg';
 import {IconlyHamburgermenu} from './icons/IconlyHamburgermenu';
+import {DotLottie} from './DotLottie';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -156,7 +157,7 @@ function ConfigureTowelButton() {
   return (
     <Button variant="outline" size="sm">
       Start now
-      {/* <DotLottie /> */}
+      <DotLottie url={'/lottie/right.lottie'} width={24} height={24} />
     </Button>
   );
 }
