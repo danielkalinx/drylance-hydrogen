@@ -16,7 +16,8 @@ import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 import Logo from '~/assets/logo/drylance-small.svg';
 import {IconlyHamburgermenu} from './icons/IconlyHamburgermenu';
-import {DotLottie} from './DotLottie';
+import {useLottie} from 'lottie-react';
+import rightArrow from '~/assets/lottie/right-arrow.json';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -154,10 +155,18 @@ function HeaderCtas({
 
 // Configure Towel Button
 function ConfigureTowelButton() {
+  const options = {
+    animationData: rightArrow,
+    loop: true,
+    autoplay: true,
+  };
+
+  const {View} = useLottie(options);
+
   return (
     <Button variant="outline" size="sm">
       Start now
-      <DotLottie url={'/lottie/right.lottie'} width={24} height={24} />
+      <span className="ml-1 w-4">{View}</span>
     </Button>
   );
 }

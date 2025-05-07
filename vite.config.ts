@@ -47,6 +47,7 @@ export default defineConfig({
        * @see https://vitejs.dev/config/dep-optimization-options
        */
       include: [
+        'lottie-react',
         'use-sync-external-store/shim/with-selector.js',
         'prop-types',
         'scheduler',
