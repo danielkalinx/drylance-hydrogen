@@ -622,11 +622,11 @@ export type CatalogQuery = {
   };
 };
 
-export type GetConfigurationOptionsQueryVariables = StorefrontAPI.Exact<{
+export type GetConfigurationOptionsListQueryVariables = StorefrontAPI.Exact<{
   [key: string]: never;
 }>;
 
-export type GetConfigurationOptionsQuery = {
+export type GetConfigurationOptionsListQuery = {
   metaobjects: {
     edges: Array<{
       node: Pick<StorefrontAPI.Metaobject, 'id' | 'handle'> & {
@@ -1191,6 +1191,29 @@ export type PredictiveSearchQuery = {
   }>;
 };
 
+export type GetConfigurationValuesQueryVariables = StorefrontAPI.Exact<{
+  [key: string]: never;
+}>;
+
+export type GetConfigurationValuesQuery = {
+  metaobjects: {
+    edges: Array<{
+      node: Pick<StorefrontAPI.Metaobject, 'handle'> & {
+        fields: Array<Pick<StorefrontAPI.MetaobjectField, 'key' | 'value'>>;
+        field?: StorefrontAPI.Maybe<{
+          reference?: StorefrontAPI.Maybe<
+            Pick<StorefrontAPI.Metaobject, 'handle'> & {
+              field?: StorefrontAPI.Maybe<
+                Pick<StorefrontAPI.MetaobjectField, 'value'>
+              >;
+            }
+          >;
+        }>;
+      };
+    }>;
+  };
+};
+
 export type StoreRobotsQueryVariables = StorefrontAPI.Exact<{
   country?: StorefrontAPI.InputMaybe<StorefrontAPI.CountryCode>;
   language?: StorefrontAPI.InputMaybe<StorefrontAPI.LanguageCode>;
@@ -1239,9 +1262,9 @@ interface GeneratedQueryTypes {
     return: CatalogQuery;
     variables: CatalogQueryVariables;
   };
-  '#graphql\n  query getConfigurationOptions {\n    metaobjects(\n      first: 50,\n      type: "configuration_option"\n    ) {\n      edges {\n        node {\n          id\n          handle\n          fields {\n            key\n            type\n            value\n            reference {\n              __typename\n              ... on Product { id handle }\n            }\n          }\n        }\n      }\n    }\n  }\n': {
-    return: GetConfigurationOptionsQuery;
-    variables: GetConfigurationOptionsQueryVariables;
+  '#graphql\n  query getConfigurationOptionsList {\n    metaobjects(\n      first: 50,\n      type: "configuration_option"\n    ) {\n      edges {\n        node {\n          id\n          handle\n          fields {\n            key\n            type\n            value\n            reference {\n              __typename\n              ... on Product { id handle }\n            }\n          }\n        }\n      }\n    }\n  }\n': {
+    return: GetConfigurationOptionsListQuery;
+    variables: GetConfigurationOptionsListQueryVariables;
   };
   '#graphql\n  query Page(\n    $language: LanguageCode,\n    $country: CountryCode,\n    $handle: String!\n  )\n  @inContext(language: $language, country: $country) {\n    page(handle: $handle) {\n      id\n      title\n      body\n      seo {\n        description\n        title\n      }\n    }\n  }\n': {
     return: PageQuery;
@@ -1266,6 +1289,10 @@ interface GeneratedQueryTypes {
   '#graphql\n  query PredictiveSearch(\n    $country: CountryCode\n    $language: LanguageCode\n    $limit: Int!\n    $limitScope: PredictiveSearchLimitScope!\n    $term: String!\n    $types: [PredictiveSearchType!]\n  ) @inContext(country: $country, language: $language) {\n    predictiveSearch(\n      limit: $limit,\n      limitScope: $limitScope,\n      query: $term,\n      types: $types,\n    ) {\n      articles {\n        ...PredictiveArticle\n      }\n      collections {\n        ...PredictiveCollection\n      }\n      pages {\n        ...PredictivePage\n      }\n      products {\n        ...PredictiveProduct\n      }\n      queries {\n        ...PredictiveQuery\n      }\n    }\n  }\n  #graphql\n  fragment PredictiveArticle on Article {\n    __typename\n    id\n    title\n    handle\n    blog {\n      handle\n    }\n    image {\n      url\n      altText\n      width\n      height\n    }\n    trackingParameters\n  }\n\n  #graphql\n  fragment PredictiveCollection on Collection {\n    __typename\n    id\n    title\n    handle\n    image {\n      url\n      altText\n      width\n      height\n    }\n    trackingParameters\n  }\n\n  #graphql\n  fragment PredictivePage on Page {\n    __typename\n    id\n    title\n    handle\n    trackingParameters\n  }\n\n  #graphql\n  fragment PredictiveProduct on Product {\n    __typename\n    id\n    title\n    handle\n    trackingParameters\n    selectedOrFirstAvailableVariant(\n      selectedOptions: []\n      ignoreUnknownOptions: true\n      caseInsensitiveMatch: true\n    ) {\n      id\n      image {\n        url\n        altText\n        width\n        height\n      }\n      price {\n        amount\n        currencyCode\n      }\n    }\n  }\n\n  #graphql\n  fragment PredictiveQuery on SearchQuerySuggestion {\n    __typename\n    text\n    styledText\n    trackingParameters\n  }\n\n': {
     return: PredictiveSearchQuery;
     variables: PredictiveSearchQueryVariables;
+  };
+  '#graphql\n  query getConfigurationValues {\n    metaobjects(first: 100, type: "configuration_value") {\n      edges {\n        node {\n          handle\n          fields {\n            key\n            value\n          }\n          field(key: "option_id") {\n            reference {\n              ... on Metaobject {\n                handle\n                field(key: "name") {\n                  value\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n': {
+    return: GetConfigurationValuesQuery;
+    variables: GetConfigurationValuesQueryVariables;
   };
   '#graphql\n  query StoreRobots($country: CountryCode, $language: LanguageCode)\n   @inContext(country: $country, language: $language) {\n    shop {\n      id\n    }\n  }\n': {
     return: StoreRobotsQuery;

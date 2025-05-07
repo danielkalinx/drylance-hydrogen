@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Always add a comment to a function only using a few keywords words to explain what it does in 2-4 words.

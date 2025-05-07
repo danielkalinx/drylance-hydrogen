@@ -1,0 +1,7 @@
+{
+  "typescriptFold.unfoldedOpacity": 0.4,
+  "typescriptFold.autoFold": true,
+  "typescriptFold.maskChar": "⋮⋮",
+  "typescriptFold.unfoldOnLineSelect": true,
+  "typescriptFold.togglePerFile": false
+}

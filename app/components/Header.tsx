@@ -16,6 +16,7 @@ import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 import {ArrowRight} from '~/components/icons/ArrowRight';
 import Logo from '~/assets/logo/drylance-small.svg';
+import {IconlyHamburgermenu} from './icons/IconlyHamburgermenu';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -26,6 +27,7 @@ interface HeaderProps {
 
 type Viewport = 'desktop' | 'mobile';
 
+// main header
 export function Header({
   header,
   isLoggedIn,
@@ -49,6 +51,7 @@ export function Header({
   );
 }
 
+// nav menu
 export function HeaderMenu({
   menu,
   primaryDomainUrl,
@@ -104,6 +107,7 @@ export function HeaderMenu({
   );
 }
 
+// CTAs (studio, account, cart)
 function HeaderCtas({
   isLoggedIn,
   cart,
@@ -173,7 +177,6 @@ function HeaderCtas({
           )}
         </>
       )}
-      <HeaderMenuMobileToggle />
       <NavLink
         prefetch="intent"
         to="/account"
@@ -187,22 +190,27 @@ function HeaderCtas({
         </Button>
       </NavLink>
       <CartToggle cart={cart} />
+      <HeaderMenuMobileToggle />
     </nav>
   );
 }
 
+// mobile menu toggle
 function HeaderMenuMobileToggle() {
   const {open} = useAside();
   return (
-    <button
-      className="header-menu-mobile-toggle reset"
+    <Button
+      variant="outline"
+      size="sm"
+      aria-label="Menu"
       onClick={() => open('mobile')}
     >
-      <h3>☰</h3>
-    </button>
+      <IconlyHamburgermenu />
+    </Button>
   );
 }
 
+// cart icon + badge
 function CartBadge({count}: {count: number | null}) {
   const {open} = useAside();
   const {publish, shop, cart, prevCart} = useAnalytics();
@@ -258,6 +266,7 @@ function CartBadge({count}: {count: number | null}) {
   );
 }
 
+// suspense cart badge
 function CartToggle({cart}: Pick<HeaderProps, 'cart'>) {
   return (
     <Suspense fallback={<CartBadge count={null} />}>
@@ -268,6 +277,7 @@ function CartToggle({cart}: Pick<HeaderProps, 'cart'>) {
   );
 }
 
+// cart badge logic
 function CartBanner() {
   const originalCart = useAsyncValue() as CartApiQueryFragment | null;
   const cart = useOptimisticCart(originalCart);
@@ -316,6 +326,7 @@ const FALLBACK_HEADER_MENU = {
   ],
 };
 
+// nav link style
 function activeLinkStyle({
   isActive,
   isPending,
