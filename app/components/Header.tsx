@@ -14,7 +14,6 @@ import {Sheet, SheetTrigger, SheetContent} from '~/components/ui/sheet';
 import {useEffect, useState} from 'react';
 import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
-import {ArrowRight} from '~/components/icons/ArrowRight';
 import Logo from '~/assets/logo/drylance-small.svg';
 import {IconlyHamburgermenu} from './icons/IconlyHamburgermenu';
 
@@ -133,50 +132,7 @@ function HeaderCtas({
       role="navigation"
       style={{display: 'flex', alignItems: 'center', gap: 8}}
     >
-      {!isStudioRoute && (
-        <>
-          <Button
-            size={isMdUp ? 'lg' : 'sm'}
-            variant="secondary"
-            onClick={handleOpen}
-          >
-            <span className="flex items-center gap-2">
-              Configure Towel
-              <span
-                className="bg-primary text-primary-foreground rounded-full flex items-center justify-center"
-                style={{width: isMdUp ? 40 : 32, height: isMdUp ? 40 : 32}}
-              >
-                <ArrowRight />
-              </span>
-            </span>
-          </Button>
-          {isMdUp ? (
-            <Sheet open={open} onOpenChange={setOpen}>
-              <SheetContent side="right">
-                <div style={{padding: 24}}>Product Studio (Sheet)</div>
-                <NavLink
-                  to="/studio/microfiber-towel"
-                  onClick={() => setOpen(false)}
-                >
-                  <Button className="mt-4 w-full">Go to Studio</Button>
-                </NavLink>
-              </SheetContent>
-            </Sheet>
-          ) : (
-            <Drawer open={open} onOpenChange={setOpen}>
-              <DrawerContent>
-                <div style={{padding: 24}}>Product Studio (Drawer)</div>
-                <NavLink
-                  to="/studio/microfiber-towel"
-                  onClick={() => setOpen(false)}
-                >
-                  <Button className="mt-4 w-full">Go to Studio</Button>
-                </NavLink>
-              </DrawerContent>
-            </Drawer>
-          )}
-        </>
-      )}
+      <ConfigureTowelButton />
       <NavLink
         prefetch="intent"
         to="/account"
@@ -192,6 +148,16 @@ function HeaderCtas({
       <CartToggle cart={cart} />
       <HeaderMenuMobileToggle />
     </nav>
+  );
+}
+
+// Configure Towel Button
+function ConfigureTowelButton() {
+  return (
+    <Button variant="outline" size="sm">
+      Start now
+      {/* <DotLottie /> */}
+    </Button>
   );
 }
 
