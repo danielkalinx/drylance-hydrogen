@@ -16,8 +16,6 @@ import {Iconlyuser} from '~/components/icons/Iconlyuser';
 import {IconlyShoppingCart} from '~/components/icons/IconlyShoppingCart';
 import Logo from '~/assets/logo/drylance-small.svg';
 import {IconlyHamburgermenu} from './icons/IconlyHamburgermenu';
-import {useLottie} from 'lottie-react';
-import rightArrow from '~/assets/lottie/right-arrow.json';
 
 interface HeaderProps {
   header: HeaderQuery;
@@ -134,7 +132,6 @@ function HeaderCtas({
       role="navigation"
       style={{display: 'flex', alignItems: 'center', gap: 8}}
     >
-      <ConfigureTowelButton />
       <NavLink
         prefetch="intent"
         to="/account"
@@ -150,24 +147,6 @@ function HeaderCtas({
       <CartToggle cart={cart} />
       <HeaderMenuMobileToggle />
     </nav>
-  );
-}
-
-// Configure Towel Button
-function ConfigureTowelButton() {
-  const options = {
-    animationData: rightArrow,
-    loop: true,
-    autoplay: true,
-  };
-
-  const {View} = useLottie(options);
-
-  return (
-    <Button variant="outline" size="sm">
-      Start now
-      <span className="ml-1 w-4">{View}</span>
-    </Button>
   );
 }
 
